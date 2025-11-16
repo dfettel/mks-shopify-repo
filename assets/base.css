@@ -10,6 +10,7 @@ body {
   margin: 0;
   min-height: 100svh;
   font-variation-settings: 'slnt' 0;
+  background: linear-gradient(180deg, rgba(10, 157, 45, 0.05) 14.79%, rgba(39, 157, 45, 0.30) 100%);
 }
 
 :root {
