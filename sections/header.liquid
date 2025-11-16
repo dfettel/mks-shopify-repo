@@ -584,6 +584,24 @@
     padding-block: calc(2 * var(--header-padding));
     margin-inline: calc(-1 * var(--gap-xl) / 2);
     padding-inline: calc(var(--gap-xl) / 2);
+    /* Behutsame Hover-Animation für Hauptmenüpunkte */
+    transition: transform 0.25s ease-out, opacity 0.2s ease-out;
+    will-change: transform, opacity;
+  }
+
+  /* Hover-Effekt: Leichtes Anheben und leichte Hervorhebung */
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .menu-list__list-item:where(:not([slot='overflow'])) > .menu-list__link:hover {
+      transform: translateY(-2px);
+      opacity: 1;
+    }
+  }
+
+  /* Für Nutzer mit reduced-motion: Nur Opacity-Änderung */
+  @media (hover: hover) and (prefers-reduced-motion: reduce) {
+    .menu-list__list-item:where(:not([slot='overflow'])) > .menu-list__link:hover {
+      opacity: 0.85;
+    }
   }
 
   /* Set header paddings based on height setting */
