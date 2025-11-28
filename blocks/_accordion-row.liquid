@@ -26,6 +26,9 @@
       <span class="svg-wrapper icon-plus">
         {{- 'icon-plus.svg' | inline_asset_content -}}
       </span>
+      <span class="svg-wrapper icon-minus">
+        {{- 'icon-minus.svg' | inline_asset_content -}}
+      </span>
     </summary>
 
     <div class="details-content">
@@ -38,6 +41,63 @@
   .details__icon {
     height: auto;
     margin-inline-end: var(--margin-xs);
+    flex-shrink: 0;
+  }
+
+  accordion-custom .details {
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 8px;
+    margin-block-end: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  accordion-custom .details__header {
+    padding: 16px 20px;
+    background: transparent;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  accordion-custom .details[open] {
+    background: #4A9D2D;
+  }
+
+  accordion-custom .details[open] .details__header {
+    background: #4A9D2D;
+    color: white;
+  }
+
+  accordion-custom .details[open] .details-content {
+    background: #4A9D2D;
+    color: white;
+    padding: 0 20px 16px 52px;
+  }
+
+  accordion-custom .details[open] .svg-wrapper svg {
+    color: white;
+  }
+
+  accordion-custom .details[open] .details__icon svg {
+    color: white;
+  }
+
+  accordion-custom .svg-wrapper {
+    color: #4A9D2D;
+  }
+
+  accordion-custom .details[open] .icon-minus {
+    display: block;
+  }
+
+  accordion-custom .details[open] .icon-plus {
+    display: none;
+  }
+
+  accordion-custom .details:not([open]) .icon-minus {
+    display: none;
   }
 {% endstylesheet %}
 
