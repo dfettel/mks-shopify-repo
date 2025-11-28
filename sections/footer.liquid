@@ -1,6 +1,6 @@
 
 
-<div class="section-background color-{{ section.settings.color_scheme }}"></div>
+<div class="section-background footer-background-wave color-{{ section.settings.color_scheme }}"></div>
 <div
   class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}"
 >
@@ -47,6 +47,13 @@
 </div>
 
 {% stylesheet %}
+  .footer-background-wave {
+    background-image: url('{{ 'footer-wave-bg.svg' | asset_url }}');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
   /* Mobile: Single column layout (base styles) */
   .footer-content {
     display: grid;
