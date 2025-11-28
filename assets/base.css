@@ -4296,3 +4296,10 @@ text-component {
     font-size: max(1rem, 100%);
   }
 }
+
+.shopify-policy__container,
+.shopify-policy__container > *,
+.rte,
+.rte > * {
+  max-width: none !important;
+}
