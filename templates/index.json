@@ -284,10 +284,303 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "section_KYdBT9": {
+      "type": "section",
+      "blocks": {
+        "text_fDLwrc": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h3>Häufig gestellte Fragen</h3>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "accordion_wxyNPg": {
+          "type": "accordion",
+          "name": "t:names.accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "type_preset": "h5",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "accordion_row_CVq7yN": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Warum sind die Spielsteine  für Kleinkinder (ab 1 Jahr) so wichtig ?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 84
+              },
+              "blocks": {
+                "text_fTcAG8": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>SINNESERFAHRUNGEN UND KÖRPERERLEBNISSE AKTIV FÖRDERN<br/><br/><br/>Kinder machen durch Bewegungen ihre ersten Erfahrungen über die Welt. Bewegungserfahrungen sind intensive Sinneserfahrungen, Bewegen und Denken sind dabei immer eng miteinander verbunden. Positive Erfahrungen wirken sich letztlich nicht bloß auf das Denken, sondern immer auch auf die Selbständigkeit der Kinder aus,Kinder experimentieren, gestalten, verändern, vergleichen, ordnen und stellen Zusammenhänge zwischen ihrem Tun und dem Ergebnis her.<br/><br/>Die bunten Spielsteine von Besonderes4KIds fördern deshalb die Entwicklung, Motorik und Lernfähigkeit von Kindern ab einem Jahr, Die Multifunktionsspielsteine bieten Kindern zusätzlich die Möglichkeit, zu gestalten, zu balancieren, zu bauen, zu spielen, zu bewegen, zu sitzen und zu 1ernen. Durch das einmalige und besondere Design sowie der gelungenen Formgestaltung der Steine können Kinder ihre Fantasie leicht umsetzen - sei es bei der Gestaltung von interessanten Parcours oder dem Bauen einfallsreicher Objekte, All diese positiven Erfahrungen haben Einfluss auf ihre Kreativität</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_fTcAG8"
+              ]
+            },
+            "accordion_row_Pk4HLq": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Sind einige Käufe vom Umtausch ausgeschlossen?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_cmKYNp": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Für bestimmte Artikel können wir keine Rückgaben akzeptieren. Diese werden vor dem Kauf sorgfältig gekennzeichnet.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_cmKYNp"
+              ]
+            },
+            "accordion_row_xcYdaM": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Wann erhalte ich meine Bestellung?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_tbfNjr": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Wir bemühen uns, deine Bestellung so schnell wie möglich zu versenden. Sobald deine Bestellung versandt wurde, erhältst du eine E-Mail mit weiteren Informationen. Die Lieferzeiten variieren je nach deinem Standort.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_tbfNjr"
+              ]
+            },
+            "accordion_row_zqVNYU": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Wo werden eure Produkte hergestellt?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_bYW69E": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Unsere Produkte werden sowohl lokal als auch global hergestellt. Wir wählen unsere Herstellungspartner sorgfältig aus, um sicherzustellen, dass unsere Produkte von hoher Qualität und zu einem fairen Preis sind.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_bYW69E"
+              ]
+            },
+            "accordion_row_mfDPwg": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Wie hoch sind die Versandkosten?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_DN48BJ": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Der Versand wird basierend auf deinem Standort und den Artikeln in deiner Bestellung berechnet. Du erfährst den Versandpreis immer vor dem Kauf.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_DN48BJ"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_row_CVq7yN",
+            "accordion_row_Pk4HLq",
+            "accordion_row_xcYdaM",
+            "accordion_row_zqVNYU",
+            "accordion_row_mfDPwg"
+          ]
+        }
+      },
+      "block_order": [
+        "text_fDLwrc",
+        "accordion_wxyNPg"
+      ],
+      "name": "t:names.faq_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "product_list_fa6P9H",
+    "section_KYdBT9"
   ]
 }
