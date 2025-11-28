@@ -83,7 +83,7 @@
         }
       },
       "custom_css": [
-        "* {background-color: transparent;}"
+
       ],
       "settings": {
         "logo_position": "left",
