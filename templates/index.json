@@ -132,7 +132,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<p>Inspired Play for Every Place<br/></p>",
+                "text": "<p>Bestseller</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -338,10 +338,33 @@
               "settings": {
                 "heading": "Warum sind die Spielsteine  für Kleinkinder (ab 1 Jahr) so wichtig ?",
                 "open_by_default": false,
-                "icon": "none",
+                "icon": "eye",
                 "width": 84
               },
               "blocks": {
+                "image_Lkazzd": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/2021_05_29_Kreativsteine_020.jpg",
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
                 "text_fTcAG8": {
                   "type": "text",
                   "settings": {
@@ -369,6 +392,7 @@
                 }
               },
               "block_order": [
+                "image_Lkazzd",
                 "text_fTcAG8"
               ]
             },
