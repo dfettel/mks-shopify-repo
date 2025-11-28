@@ -4301,5 +4301,5 @@ text-component {
 .shopify-policy__container > *,
 .rte,
 .rte > * {
-  max-width: none !important;
+  max-width: 1240px !important;
 }
