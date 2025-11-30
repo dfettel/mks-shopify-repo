@@ -91,7 +91,18 @@
         "padding-block-end": 72
       }
     },
-    "product_list_fa6P9H": {
+    "custom_liquid_8VEMFY": {
+      "type": "custom-liquid",
+      "name": "Anwendungen",
+      "settings": {
+        "custom_liquid": "<div class=\"grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 text-center\">\n            \n            <!-- Karte 1: Kindergarten -->\n            <div class=\"flex flex-col items-center\">\n                <div class=\"relative mb-6\">\n                    <!-- Bild/Kreis-Container -->\n                    <div class=\"w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-xl ring-8 ring-white\">\n                        <img src=\"https://placehold.co/400x400/e9f3e5/38a169?text=Kindergarten+Szene\" \n                             alt=\"Kindergarten Szenen\" \n                             class=\"w-full h-full object-cover transform hover:scale-105 transition duration-300\"\n                             onerror=\"this.onerror=null; this.src='https://placehold.co/400x400/e9f3e5/38a169?text=Spielplatz';\"\n                        >\n                    </div>\n                    <!-- Icon-Overlay (Haus/Gebäude) -->\n                    <div class=\"absolute inset-x-0 bottom-0 transform translate-y-1/2 flex justify-center\">\n                         <div class=\"bg-white p-3 rounded-full shadow-lg ring-4 ring-gray-100 color-primary\">\n                            <!-- Inline SVG für ein Gebäude-Icon (ersetzt das kleine Haus-Icon im Bild) -->\n                            <svg class=\"w-8 h-8 color-primary\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h-2M5 21h2m7-9h3m-3 4h3M8 11h.01M8 15h.01M5 21V8a1 1 0 011-1h12a1 1 0 011 1v13\"></path></svg>\n                        </div>\n                    </div>\n                </div>\n                \n                <h3 class=\"text-xl font-semibold mt-6 text-gray-900\">Kindergarten Szenen</h3>\n                <p class=\"text-gray-500 mt-1\">Gruppenspiel, Zusammenarbeit</p>\n            </div>\n\n            <!-- Karte 2: Zu Hause -->\n            <div class=\"flex flex-col items-center\">\n                <div class=\"relative mb-6\">\n                    <!-- Bild/Kreis-Container -->\n                    <div class=\"w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-xl ring-8 ring-white\">\n                        <img src=\"https://placehold.co/400x400/e9f3e5/38a169?text=Familiennutzung+Zuhause\" \n                             alt=\"Zu Hause Nutzung\" \n                             class=\"w-full h-full object-cover transform hover:scale-105 transition duration-300\"\n                             onerror=\"this.onerror=null; this.src='https://placehold.co/400x400/e9f3e5/38a169?text=Familie';\"\n                        >\n                    </div>\n                    <!-- Icon-Overlay (Haus) -->\n                    <div class=\"absolute inset-x-0 bottom-0 transform translate-y-1/2 flex justify-center\">\n                        <div class=\"bg-white p-3 rounded-full shadow-lg ring-4 ring-gray-100 color-primary\">\n                             <!-- Inline SVG für ein Haus-Icon (Home Use) -->\n                             <svg class=\"w-8 h-8 color-primary\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6\"></path></svg>\n                        </div>\n                    </div>\n                </div>\n                \n                <h3 class=\"text-xl font-semibold mt-6 text-gray-900\">Nutzung Zu Hause</h3>\n                <p class=\"text-gray-500 mt-1\">Gruppenspiel, Zusammenarbeit</p>\n            </div>\n\n            <!-- Karte 3: Schule/Therapie -->\n            <div class=\"flex flex-col items-center\">\n                <div class=\"relative mb-6\">\n                    <!-- Bild/Kreis-Container -->\n                    <div class=\"w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-xl ring-8 ring-white\">\n                        <img src=\"https://placehold.co/400x400/e9f3e5/38a169?text=Schule+und+Therapie\" \n                             alt=\"Schule/Therapie\" \n                             class=\"w-full h-full object-cover transform hover:scale-105 transition duration-300\"\n                             onerror=\"this.onerror=null; this.src='https://placehold.co/400x400/e9f3e5/38a169?text=Therapie';\"\n                        >\n                    </div>\n                    <!-- Icon-Overlay (Schule/Therapie) -->\n                    <div class=\"absolute inset-x-0 bottom-0 transform translate-y-1/2 flex justify-center\">\n                        <div class=\"bg-white p-3 rounded-full shadow-lg ring-4 ring-gray-100 color-primary\">\n                            <!-- Inline SVG für ein Schul-Icon -->\n                            <svg class=\"w-8 h-8 color-primary\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M8 14v3m4-3v3m4-3v3M3 21h18M5 3v18h14V3a2 2 0 00-2-2H7a2 2 0 00-2 2z\"></path></svg>\n                        </div>\n                    </div>\n                </div>\n                \n                <h3 class=\"text-xl font-semibold mt-6 text-gray-900\">Schule/Therapie</h3>\n                <p class=\"text-gray-500 mt-1\">Gruppenspiel, Zusammenarbeit</p>\n            </div>\n            \n        </div>",
+        "color_scheme": "",
+        "section_width": "full-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "product_list_3hQ4dz": {
       "type": "product-list",
       "blocks": {
         "static-header": {
@@ -128,7 +139,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_list_text_YFtzcL": {
+            "product_list_text_UPQ4BL": {
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
@@ -154,7 +165,7 @@
               },
               "blocks": {}
             },
-            "product_list_button_MWeP9V": {
+            "product_list_button_q84CwK": {
               "type": "_product-list-button",
               "name": "t:names.product_list_button",
               "settings": {
@@ -170,8 +181,8 @@
             }
           },
           "block_order": [
-            "product_list_text_YFtzcL",
-            "product_list_button_MWeP9V"
+            "product_list_text_UPQ4BL",
+            "product_list_button_q84CwK"
           ]
         },
         "static-product-card": {
@@ -192,11 +203,11 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_card_gallery_677WP3": {
+            "product_card_gallery_VMnamz": {
               "type": "_product-card-gallery",
               "name": "t:names.product_card_media",
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "landscape",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -208,13 +219,13 @@
               },
               "blocks": {}
             },
-            "product_title_YXxMTj": {
+            "product_title_QEFBxN": {
               "type": "product-title",
               "name": "t:names.product_title",
               "settings": {
                 "width": "100%",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
@@ -223,9 +234,9 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
+                "background": true,
+                "background_color": "#ffffff",
+                "corner_radius": 10,
                 "padding-block-start": 4,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -233,38 +244,41 @@
               },
               "blocks": {}
             },
-            "price_JQzVV4": {
+            "price_a3WLR3": {
               "type": "price",
               "name": "t:names.product_price",
               "settings": {
                 "show_sale_price_first": true,
                 "show_installments": false,
-                "show_tax_info": false,
+                "show_tax_info": true,
                 "type_preset": "h6",
                 "width": "100%",
-                "alignment": "left",
+                "alignment": "right",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
-                "color": "var(--color-foreground)",
-                "padding-block-start": 0,
+                "color": "var(--color-foreground-heading)",
+                "padding-block-start": 3,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-end": 22
               },
               "blocks": {}
             }
           },
           "block_order": [
-            "product_card_gallery_677WP3",
-            "product_title_YXxMTj",
-            "price_JQzVV4"
+            "product_card_gallery_VMnamz",
+            "product_title_QEFBxN",
+            "price_a3WLR3"
           ]
         }
       },
-      "name": "Featured collection",
+      "custom_css": [
+        "{background: #e6f5ea;}"
+      ],
+      "name": "Bestseller",
       "settings": {
         "collection": "all",
         "layout_type": "grid",
@@ -603,7 +617,8 @@
   },
   "order": [
     "hero_jVaWmY",
-    "product_list_fa6P9H",
+    "custom_liquid_8VEMFY",
+    "product_list_3hQ4dz",
     "section_KYdBT9"
   ]
 }
