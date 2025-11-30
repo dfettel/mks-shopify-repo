@@ -4307,3 +4307,11 @@ text-component {
 .header__row {
   background-color: #e4f2e7;
 }
+
+.header-menu {
+  text-align: center;
+}
+
+.header-menu .menu-list__list {
+  justify-content: center;
+}
