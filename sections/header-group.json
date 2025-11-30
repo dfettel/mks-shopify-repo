@@ -14,6 +14,20 @@
     "header_announcements_9jGBFp": {
       "type": "header-announcements",
       "blocks": {
+        "announcement_TzWarT": {
+          "type": "_announcement",
+          "name": "t:names.announcement",
+          "settings": {
+            "text": "Versandkostenfrei in Deutschland",
+            "link": "",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "weight": "",
+            "letter_spacing": "normal",
+            "case": "none"
+          },
+          "blocks": {}
+        },
         "announcement_BxgCk9": {
           "type": "_announcement",
           "settings": {
@@ -29,6 +43,7 @@
         }
       },
       "block_order": [
+        "announcement_TzWarT",
         "announcement_BxgCk9"
       ],
       "custom_css": [
@@ -38,7 +53,7 @@
       "settings": {
         "speed": 5,
         "section_width": "page-width",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "divider_width": 1,
         "padding-block-start": 15,
         "padding-block-end": 15
@@ -82,9 +97,7 @@
           "blocks": {}
         }
       },
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "logo_position": "left",
         "menu_position": "left",

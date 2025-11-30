@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/icon_small_5c121130-b189-467d-afca-a26f72ae36fa.png",
+    "logo": "shopify://shop_images/icon_small_b4306601-c456-4dd9-abbe-192b88af6890.png",
     "logo_height": 36,
     "logo_height_mobile": 28,
     "type_body_font": "inter_n4",
@@ -43,9 +43,9 @@
     "type_size_h6": "12",
     "type_line_height_h6": "display-loose",
     "page_width": "normal",
-    "page_transition_enabled": false,
-    "transition_to_main_product": false,
-    "card_hover_effect": "none",
+    "page_transition_enabled": true,
+    "transition_to_main_product": true,
+    "card_hover_effect": "subtle-zoom",
     "badge_position": "top-right",
     "badge_corner_radius": 100,
     "badge_sale_color_scheme": "scheme-1",
