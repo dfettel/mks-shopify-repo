@@ -75,8 +75,23 @@ select {
     box-shadow var(--hover-transition-duration) var(--hover-transition-timing);
   will-change: transform, box-shadow;
   z-index: var(--layer-flat);
+  
 }
 
+.product-card {
+  border-radius: 20px;
+  border: 1px solid #E5EEEF;
+  padding:20px;
+}
+.product-card .product-media {
+  border-radius: 0.625rem;
+border: 1px solid #E5EEEF;
+  padding:10px;
+  background-color: #F8F8F8;
+}
+.product-card .product-media img {
+  border-radius: 10px;
+}
 .product-card__link {
   position: absolute;
   inset: 0;
@@ -87,6 +102,7 @@ select {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
 }
 
 .product-card__content {
