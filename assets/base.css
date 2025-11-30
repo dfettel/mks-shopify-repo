@@ -4303,3 +4303,7 @@ text-component {
 .rte > * {
   max-width: 1240px !important;
 }
+
+.header__row {
+  background-color: #e4f2e7;
+}
