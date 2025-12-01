@@ -59,11 +59,11 @@
         "padding-block-end": 80
       }
     },
-    "custom_liquid_iEUn4V": {
+    "custom_liquid_fcg8Ay": {
       "type": "custom-liquid",
       "name": "t:names.custom_liquid",
       "settings": {
-        "custom_liquid": "<div class=\"mksgrid grid-3 text-center spielideen-liste\">\n    {% for entry in metaobjects.spielideen.values %}\n      <div class=\"spielidee-item\" style=\"margin-bottom: 30px; padding: 20px; border: 1px solid #ddd;\">\n        <h3>{{ entry.name }}</h3>\n             <img alt=\"{{entry.name}}\" src=\"{{ entry.bild | image_url: width: 600 }}\"  style=\"max-width: 100%; height: auto;\">\n      </div>\n    {% endfor %}\n  </div>",
+        "custom_liquid": "<div class=\"mksgrid grid-3 text-center spielideen-liste\">\n    {% for entry in metaobjects.download.values %}\n      <div class=\"spielidee-item\" style=\"margin-bottom: 30px; padding: 20px; border: 1px solid #ddd;\">\n        <h3>{{ entry.title }}</h3>\n<button style=\"margin:0 auto;\" class=\"button\" onclick=\"window.open('{{entry.link}}')\">{{ entry.linklabel }}</button>\n             \n      </div>\n    {% endfor %}\n  </div>",
         "color_scheme": "",
         "section_width": "page-width",
         "padding-block-start": 0,
@@ -73,6 +73,6 @@
   },
   "order": [
     "main",
-    "custom_liquid_iEUn4V"
+    "custom_liquid_fcg8Ay"
   ]
 }

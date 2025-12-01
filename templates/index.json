@@ -12,6 +12,30 @@
     "hero_jVaWmY": {
       "type": "hero",
       "blocks": {
+        "video_wXQJgF": {
+          "type": "video",
+          "name": "t:names.video",
+          "settings": {
+            "source": "uploaded",
+            "video": "shopify://files/videos/Transparentes_Video_von_spielenden_Kindern.mp4",
+            "video_url": "",
+            "video_autoplay": false,
+            "video_loop": false,
+            "alt": "",
+            "custom_width": 100,
+            "custom_width_mobile": 100,
+            "aspect_ratio": "auto",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 21,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "text_YLPk4p": {
           "type": "text",
           "name": "t:names.heading",
@@ -55,6 +79,7 @@
         }
       },
       "block_order": [
+        "video_wXQJgF",
         "text_YLPk4p",
         "button_H9gpTf"
       ],
@@ -95,7 +120,7 @@
       "type": "custom-liquid",
       "name": "Anwendungen",
       "settings": {
-        "custom_liquid": "<div class=\"grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 text-center\">\n            \n            <!-- Karte 1: Kindergarten -->\n            <div class=\"flex flex-col items-center\">\n                <div class=\"relative mb-6\">\n                    <!-- Bild/Kreis-Container -->\n                    <div class=\"w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-xl ring-8 ring-white\">\n                        <img src=\"https://placehold.co/400x400/e9f3e5/38a169?text=Kindergarten+Szene\" \n                             alt=\"Kindergarten Szenen\" \n                             class=\"w-full h-full object-cover transform hover:scale-105 transition duration-300\"\n                             onerror=\"this.onerror=null; this.src='https://placehold.co/400x400/e9f3e5/38a169?text=Spielplatz';\"\n                        >\n                    </div>\n                    <!-- Icon-Overlay (Haus/Gebäude) -->\n                    <div class=\"absolute inset-x-0 bottom-0 transform translate-y-1/2 flex justify-center\">\n                         <div class=\"bg-white p-3 rounded-full shadow-lg ring-4 ring-gray-100 color-primary\">\n                            <!-- Inline SVG für ein Gebäude-Icon (ersetzt das kleine Haus-Icon im Bild) -->\n                            <svg class=\"w-8 h-8 color-primary\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h-2M5 21h2m7-9h3m-3 4h3M8 11h.01M8 15h.01M5 21V8a1 1 0 011-1h12a1 1 0 011 1v13\"></path></svg>\n                        </div>\n                    </div>\n                </div>\n                \n                <h3 class=\"text-xl font-semibold mt-6 text-gray-900\">Kindergarten Szenen</h3>\n                <p class=\"text-gray-500 mt-1\">Gruppenspiel, Zusammenarbeit</p>\n            </div>\n\n            <!-- Karte 2: Zu Hause -->\n            <div class=\"flex flex-col items-center\">\n                <div class=\"relative mb-6\">\n                    <!-- Bild/Kreis-Container -->\n                    <div class=\"w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-xl ring-8 ring-white\">\n                        <img src=\"https://placehold.co/400x400/e9f3e5/38a169?text=Familiennutzung+Zuhause\" \n                             alt=\"Zu Hause Nutzung\" \n                             class=\"w-full h-full object-cover transform hover:scale-105 transition duration-300\"\n                             onerror=\"this.onerror=null; this.src='https://placehold.co/400x400/e9f3e5/38a169?text=Familie';\"\n                        >\n                    </div>\n                    <!-- Icon-Overlay (Haus) -->\n                    <div class=\"absolute inset-x-0 bottom-0 transform translate-y-1/2 flex justify-center\">\n                        <div class=\"bg-white p-3 rounded-full shadow-lg ring-4 ring-gray-100 color-primary\">\n                             <!-- Inline SVG für ein Haus-Icon (Home Use) -->\n                             <svg class=\"w-8 h-8 color-primary\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6\"></path></svg>\n                        </div>\n                    </div>\n                </div>\n                \n                <h3 class=\"text-xl font-semibold mt-6 text-gray-900\">Nutzung Zu Hause</h3>\n                <p class=\"text-gray-500 mt-1\">Gruppenspiel, Zusammenarbeit</p>\n            </div>\n\n            <!-- Karte 3: Schule/Therapie -->\n            <div class=\"flex flex-col items-center\">\n                <div class=\"relative mb-6\">\n                    <!-- Bild/Kreis-Container -->\n                    <div class=\"w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-xl ring-8 ring-white\">\n                        <img src=\"https://placehold.co/400x400/e9f3e5/38a169?text=Schule+und+Therapie\" \n                             alt=\"Schule/Therapie\" \n                             class=\"w-full h-full object-cover transform hover:scale-105 transition duration-300\"\n                             onerror=\"this.onerror=null; this.src='https://placehold.co/400x400/e9f3e5/38a169?text=Therapie';\"\n                        >\n                    </div>\n                    <!-- Icon-Overlay (Schule/Therapie) -->\n                    <div class=\"absolute inset-x-0 bottom-0 transform translate-y-1/2 flex justify-center\">\n                        <div class=\"bg-white p-3 rounded-full shadow-lg ring-4 ring-gray-100 color-primary\">\n                            <!-- Inline SVG für ein Schul-Icon -->\n                            <svg class=\"w-8 h-8 color-primary\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M8 14v3m4-3v3m4-3v3M3 21h18M5 3v18h14V3a2 2 0 00-2-2H7a2 2 0 00-2 2z\"></path></svg>\n                        </div>\n                    </div>\n                </div>\n                \n                <h3 class=\"text-xl font-semibold mt-6 text-gray-900\">Schule/Therapie</h3>\n                <p class=\"text-gray-500 mt-1\">Gruppenspiel, Zusammenarbeit</p>\n            </div>\n            \n        </div>",
+        "custom_liquid": "<!DOCTYPE html>\n<html lang=\"de\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Inspiriertes Spielen (Statisch)</title>\n    <!-- \n        Hinweis: In einer echten Shopify-Umgebung müssten diese Stile nicht \n        inline sein, aber sie definieren die spezifischen, nicht-standardmäßigen \n        Elemente (Kreise, Icons), die das Theme nicht nativ unterstützt.\n        Die verwendeten Klassennamen simulieren gängige Shopify-Dawn-Klassen.\n    -->\n    <style>\n        /* Grundlegende Typografie und Farben */\n        .inspired-play-section {\n            font-family: 'Inter', sans-serif; /* Simuliert die Verwendung der Theme-Schriftart */\n            --color-primary: #38a169; /* Grün */\n            --color-light: #e9f3e5; /* Helles Grün für Welle */\n            --color-gray-100: #f3f4f6; /* Hellgrau */\n            --color-white: #ffffff;\n            padding-top: 4rem; \n            padding-bottom: 4rem;\n        }\n\n        /* Setzt die Farbe für die Icons */\n        .color-primary-icon {\n            color: var(--color-primary);\n            stroke: var(--color-primary);\n        }\n\n        /* Responsive Grid-Logik (Simuliert 1 Spalte auf Mobile, 3 Spalten auf Desktop) */\n        .grid--3-col {\n            display: grid;\n            grid-template-columns: repeat(1, minmax(0, 1fr));\n            gap: 3rem; /* Abstand zwischen den Karten */\n        }\n\n        /* Desktop-Ansicht (md-Breakpoint, ca. 768px) */\n        @media (min-width: 768px) {\n            .grid--3-col {\n                grid-template-columns: repeat(3, minmax(0, 1fr));\n                gap: 2rem;\n            }\n        }\n\n        /* Kreis- und Bildstile (Custom CSS für das kreisförmige Design) */\n        .card-image-container {\n            width: 18rem;\n            height: 18rem;\n            border-radius: 50%;\n            overflow: hidden;\n            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);\n            border: 8px solid var(--color-white);\n            margin-left: auto;\n            margin-right: auto;\n        }\n\n        .card-image {\n            object-fit: cover;\n            width: 100%;\n            height: 100%;\n            transition: transform 300ms ease-in-out;\n        }\n        .card-image:hover {\n            transform: scale(1.05);\n        }\n\n        /* Style für das Icon-Overlay */\n        .icon-overlay-wrapper {\n            position: absolute;\n            left: 0;\n            right: 0;\n            bottom: 0;\n            transform: translateY(50%);\n            display: flex;\n            justify-content: center;\n        }\n        .icon-badge {\n            background-color: var(--color-white);\n            padding: 0.75rem; \n            border-radius: 50%;\n            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);\n            border: 4px solid var(--color-gray-100); \n        }\n\n        /* Utility-Klassen-Simulationen (Shopify-Klassen) */\n        .page-width { max-width: 1280px; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }\n        .text-center { text-align: center; }\n        .h1 { font-size: 3rem; font-weight: 700; line-height: 1.2; } /* Dawn h1 style */\n        .h4 { font-size: 1.25rem; font-weight: 600; } /* Dawn h4 style */\n\n    </style>\n</head>\n<body>\n\n    <!-- Haupt-Sektion Container (Simuliert eine Sektion) -->\n    <section class=\"inspired-play-section\">\n        <div class=\"page-width\">\n            \n            <!-- Titel und Untertitel (Verwendung von Shopify-ähnlichen Klassen) -->\n            <header class=\"text-center\" style=\"margin-bottom: 4rem;\">\n                <h1 class=\"h1\" style=\"color: #1f2937;\">\n                    Inspiriertes Spielen für jeden Ort\n                </h1>\n                <p style=\"font-size: 1.125rem; color: #4b5563; max-width: 42rem; margin-left: auto; margin-right: auto;\">\n                    Pädagogisches Spielzeug, das die Entwicklung von Kindern durch Bewegung, Gleichgewicht und fantasievolles Spiel fördert\n                </p>\n            </header>\n\n            <!-- Karten-Grid für die drei Säulen -->\n            <!-- Simuliert das gängige Dawn-Grid-Muster (grid grid--3-col) -->\n            <div class=\"grid--3-col text-center\">\n                \n                <!-- Karte 1: Kindergarten -->\n                <div class=\"grid__item\" style=\"display: flex; flex-direction: column; align-items: center;\">\n                    <div class=\"relative\" style=\"margin-bottom: 2.5rem;\">\n                        <!-- Bild/Kreis-Container -->\n                        <div class=\"card-image-container\">\n                             <!-- Platzhalterbild -->\n                            <img src=\"https://placehold.co/400x400/e9f3e5/38a169?text=KINDERGARTEN\" \n                                 alt=\"Kindergarten Szenen\" \n                                 class=\"card-image\"\n                            >\n                        </div>\n                        <!-- Icon-Overlay -->\n                        <div class=\"icon-overlay-wrapper\">\n                             <div class=\"icon-badge color-primary-icon\">\n                                <!-- Icon für Kindergarten (Gebäude) -->\n                                <svg style=\"width: 2rem; height: 2rem;\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h-2M5 21h2m7-9h3m-3 4h3M8 11h.01M8 15h.01M5 21V8a1 1 0 011-1h12a1 1 0 011 1v13\"></path></svg>\n                            </div>\n                        </div>\n                    </div>\n                    \n                    <h3 class=\"h4\" style=\"color: #1f2937; margin-top: 1.5rem;\">Kindergarten Szenen</h3>\n                    <p style=\"color: #6b7280; margin-top: 0.25rem;\">Gruppenspiel, Zusammenarbeit</p>\n                </div>\n\n                <!-- Karte 2: Zu Hause -->\n                <div class=\"grid__item\" style=\"display: flex; flex-direction: column; align-items: center;\">\n                    <div class=\"relative\" style=\"margin-bottom: 2.5rem;\">\n                        <!-- Bild/Kreis-Container -->\n                        <div class=\"card-image-container\">\n                            <!-- Platzhalterbild -->\n                            <img src=\"https://placehold.co/400x400/e9f3e5/38a169?text=FAMILIENNUTZUNG\" \n                                 alt=\"Zu Hause Nutzung\" \n                                 class=\"card-image\"\n                            >\n                        </div>\n                        <!-- Icon-Overlay -->\n                        <div class=\"icon-overlay-wrapper\">\n                            <div class=\"icon-badge color-primary-icon\">\n                                <!-- Icon für Zu Hause (Haus) -->\n                                <svg style=\"width: 2rem; height: 2rem;\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6\"></path></svg>\n                            </div>\n                        </div>\n                    </div>\n                    \n                    <h3 class=\"h4\" style=\"color: #1f2937; margin-top: 1.5rem;\">Nutzung Zu Hause</h3>\n                    <p style=\"color: #6b7280; margin-top: 0.25rem;\">Gruppenspiel, Zusammenarbeit</p>\n                </div>\n\n                <!-- Karte 3: Schule/Therapie -->\n                <div class=\"grid__item\" style=\"display: flex; flex-direction: column; align-items: center;\">\n                    <div class=\"relative\" style=\"margin-bottom: 2.5rem;\">\n                        <!-- Bild/Kreis-Container -->\n                        <div class=\"card-image-container\">\n                            <!-- Platzhalterbild -->\n                            <img src=\"https://placehold.co/400x400/e9f3e5/38a169?text=SCHULE+THERAPIE\" \n                                 alt=\"Schule/Therapie\" \n                                 class=\"card-image\"\n                            >\n                        </div>\n                        <!-- Icon-Overlay -->\n                        <div class=\"icon-overlay-wrapper\">\n                            <div class=\"icon-badge color-primary-icon\">\n                                <!-- Icon für Schule/Therapie (Schule/Medizin) -->\n                                <svg style=\"width: 2rem; height: 2rem;\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M8 14v3m4-3v3m4-3v3M3 21h18M5 3v18h14V3a2 2 0 00-2-2H7a2 2 0 00-2 2z\"></path></svg>\n                            </div>\n                        </div>\n                    </div>\n                    \n                    <h3 class=\"h4\" style=\"color: #1f2937; margin-top: 1.5rem;\">Schule/Therapie</h3>\n                    <p style=\"color: #6b7280; margin-top: 0.25rem;\">Gruppenspiel, Zusammenarbeit</p>\n                </div>\n                \n            </div>\n        </div>\n    </section>\n\n    <!-- Dekorativer Footer (Gewellte Linie und Biene) -->\n    <div class=\"relative\" style=\"width: 100%; overflow: hidden; margin-top: 3rem;\">\n        <!-- SVG für die gewellte Linie -->\n        <svg style=\"width: 100%; height: 4rem; fill: currentColor;\" viewBox=\"0 0 1440 100\" preserveAspectRatio=\"none\">\n            <path d=\"M0,70 Q360,30 720,70 T1440,70 V100 H0 Z\" fill=\"#e9f3e5\"></path>\n            <!-- Eine zweite Welle, um den \"gepunkteten\" Effekt zu imitieren -->\n            <path d=\"M0,75 Q360,40 720,80 T1440,80 V100 H0 Z\" fill=\"none\" stroke=\"#d1e3c4\" stroke-width=\"2\" stroke-dasharray=\"8, 8\"></path>\n        </svg>\n\n        <!-- Kleiner Biene/Insekt-Icon -->\n        <div class=\"absolute\" style=\"position: absolute; bottom: 1rem; right: 2rem; z-index: 10; padding: 0.5rem; border-radius: 50%; background-color: white; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);\">\n            <span role=\"img\" aria-label=\"Biene\" style=\"font-size: 1.875rem;\">\n                🐝\n            </span>\n        </div>\n    </div>\n\n</body>\n</html>",
         "color_scheme": "",
         "section_width": "full-width",
         "padding-block-start": 0,
@@ -105,6 +130,47 @@
     "product_list_3hQ4dz": {
       "type": "product-list",
       "blocks": {
+        "group_nmM7EP": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "static-header": {
           "type": "_product-list-content",
           "name": "t:names.header",
@@ -113,7 +179,7 @@
             "content_direction": "row",
             "vertical_on_mobile": false,
             "horizontal_alignment": "space-between",
-            "vertical_alignment": "flex-end",
+            "vertical_alignment": "center",
             "align_baseline": true,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
@@ -139,25 +205,22 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_list_text_UPQ4BL": {
-              "type": "_product-list-text",
-              "name": "t:names.collection_title",
+            "image_EDXqnx": {
+              "type": "image",
+              "name": "t:names.image",
               "settings": {
-                "text": "<p>Bestseller</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "h1",
-                "font": "var(--font-body--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
+                "image": "shopify://shop_images/Screenshot_2025-12-01_001307.png",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -165,24 +228,124 @@
               },
               "blocks": {}
             },
-            "product_list_button_q84CwK": {
-              "type": "_product-list-button",
-              "name": "t:names.product_list_button",
+            "group_w8cEUN": {
+              "type": "group",
+              "name": "t:names.group",
               "settings": {
-                "label": "View all",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 12,
+                "width": "custom",
                 "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "text_F7RKVG": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2>Unsere Bestseller – Bewährte Kreativsteine</h2>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_8THzRT": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Seit wir Kreativsteine fertigen, hat sich eines nie geändert: Die beliebtesten Stücke setzen sich durch, weil sie sich in der Praxis bewähren. Unsere Bestseller stehen für genau das – Qualität, die überzeugt, und Designs, die Kinder wie Erwachsene seit Jahren begleiten.</p><p>Hier findest du jene Produkte, die sich im Alltag tausendfach bewährt haben: sorgfältig gefertigt, sicher, langlebig und mit jener liebevollen Handwerksnähe, die unser Haus seit jeher auszeichnet. Ob für fantasievolles Spielen, für kreative Lernmomente oder als besonderes Geschenk – unsere Bestseller stehen für Verlässlichkeit und Freude.</p><p>Wer nach Orientierung sucht, greift traditionell zuerst zu den erprobten Favoriten. Genau dafür ist diese Auswahl da: ein klarer Wegweiser zu den Steinen, die andere Familien bereits begeistern konnten.</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "button_AtmpWg": {
+                  "type": "button",
+                  "name": "t:names.button",
+                  "settings": {
+                    "label": "Alle Produkte",
+                    "link": "shopify://collections/all",
+                    "open_in_new_tab": false,
+                    "style_class": "button",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_F7RKVG",
+                "text_8THzRT",
+                "button_AtmpWg"
+              ]
             }
           },
           "block_order": [
-            "product_list_text_UPQ4BL",
-            "product_list_button_q84CwK"
+            "image_EDXqnx",
+            "group_w8cEUN"
           ]
         },
         "static-product-card": {
@@ -275,6 +438,9 @@
           ]
         }
       },
+      "block_order": [
+        "group_nmM7EP"
+      ],
       "custom_css": [
         "{background: #e6f5ea;}"
       ],
@@ -332,7 +498,7 @@
           "type": "accordion",
           "name": "t:names.accordion",
           "settings": {
-            "icon": "caret",
+            "icon": "plus",
             "dividers": true,
             "type_preset": "h5",
             "inherit_color_scheme": true,
@@ -350,38 +516,16 @@
             "accordion_row_CVq7yN": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Warum sind die Spielsteine  für Kleinkinder (ab 1 Jahr) so wichtig ?",
+                "heading": "{{ metaobjects.faq[\"wo-wird-der-mein-kreativ-stein-und-mein-verwandlungs-stein-hergestellt\"].question.value }}",
                 "open_by_default": false,
-                "icon": "eye",
+                "icon": "none",
                 "width": 84
               },
               "blocks": {
-                "image_Lkazzd": {
-                  "type": "image",
-                  "name": "t:names.image",
-                  "settings": {
-                    "link": "",
-                    "image_ratio": "adapt",
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "height": "fit",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
                 "text_fTcAG8": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>SINNESERFAHRUNGEN UND KÖRPERERLEBNISSE AKTIV FÖRDERN<br/><br/><br/>Kinder machen durch Bewegungen ihre ersten Erfahrungen über die Welt. Bewegungserfahrungen sind intensive Sinneserfahrungen, Bewegen und Denken sind dabei immer eng miteinander verbunden. Positive Erfahrungen wirken sich letztlich nicht bloß auf das Denken, sondern immer auch auf die Selbständigkeit der Kinder aus,Kinder experimentieren, gestalten, verändern, vergleichen, ordnen und stellen Zusammenhänge zwischen ihrem Tun und dem Ergebnis her.<br/><br/>Die bunten Spielsteine von Besonderes4KIds fördern deshalb die Entwicklung, Motorik und Lernfähigkeit von Kindern ab einem Jahr, Die Multifunktionsspielsteine bieten Kindern zusätzlich die Möglichkeit, zu gestalten, zu balancieren, zu bauen, zu spielen, zu bewegen, zu sitzen und zu 1ernen. Durch das einmalige und besondere Design sowie der gelungenen Formgestaltung der Steine können Kinder ihre Fantasie leicht umsetzen - sei es bei der Gestaltung von interessanten Parcours oder dem Bauen einfallsreicher Objekte, All diese positiven Erfahrungen haben Einfluss auf ihre Kreativität</p>",
+                    "text": "<p>{{ metaobjects.faq[\"wo-wird-der-mein-kreativ-stein-und-mein-verwandlungs-stein-hergestellt\"].answer | metafield_tag }}</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -393,7 +537,7 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
-                    "background": false,
+                    "background": true,
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
@@ -405,14 +549,13 @@
                 }
               },
               "block_order": [
-                "image_Lkazzd",
                 "text_fTcAG8"
               ]
             },
             "accordion_row_Pk4HLq": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Sind einige Käufe vom Umtausch ausgeschlossen?",
+                "heading": "{{ metaobjects.faq[\"wie-lange-nutzen-kinder-den-spielsteinen\"].question.value }}",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -421,7 +564,7 @@
                 "text_cmKYNp": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Für bestimmte Artikel können wir keine Rückgaben akzeptieren. Diese werden vor dem Kauf sorgfältig gekennzeichnet.</p>",
+                    "text": "<p>{{ metaobjects.faq[\"wie-lange-nutzen-kinder-den-spielsteinen\"].answer | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -452,7 +595,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_row",
               "settings": {
-                "heading": "Wann erhalte ich meine Bestellung?",
+                "heading": "{{ metaobjects.faq[\"warum-ist-dieses-material-etwas-so-besonderes-hergestellt-aus-epp\"].question.value }}",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -462,7 +605,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Wir bemühen uns, deine Bestellung so schnell wie möglich zu versenden. Sobald deine Bestellung versandt wurde, erhältst du eine E-Mail mit weiteren Informationen. Die Lieferzeiten variieren je nach deinem Standort.</p>",
+                    "text": "<p>{{ metaobjects.faq[\"warum-ist-dieses-material-etwas-so-besonderes-hergestellt-aus-epp\"].answer | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -493,7 +636,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_row",
               "settings": {
-                "heading": "Wo werden eure Produkte hergestellt?",
+                "heading": "{{ metaobjects.faq[\"wie-kann-ich-die-kreativsteine-reinigen\"].question.value }}",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -503,7 +646,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Unsere Produkte werden sowohl lokal als auch global hergestellt. Wir wählen unsere Herstellungspartner sorgfältig aus, um sicherzustellen, dass unsere Produkte von hoher Qualität und zu einem fairen Preis sind.</p>",
+                    "text": "<p>{{ metaobjects.faq[\"wie-kann-ich-die-kreativsteine-reinigen\"].answer | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -534,7 +677,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_row",
               "settings": {
-                "heading": "Wie hoch sind die Versandkosten?",
+                "heading": "{{ metaobjects.faq[\"warum-sind-die-spielsteine-fur-kleinkinder-ab-1-jahr-so-wichtig\"].question.value }}",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -544,7 +687,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Der Versand wird basierend auf deinem Standort und den Artikeln in deiner Bestellung berechnet. Du erfährst den Versandpreis immer vor dem Kauf.</p>",
+                    "text": "<p>{{ metaobjects.faq[\"warum-sind-die-spielsteine-fur-kleinkinder-ab-1-jahr-so-wichtig\"].answer | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
