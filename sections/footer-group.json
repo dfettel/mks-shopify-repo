@@ -11,6 +11,333 @@
   "type": "footer",
   "name": "Footer",
   "sections": {
+    "footer_EyfUR3": {
+      "type": "footer",
+      "blocks": {
+        "group_qXbkpw": {
+          "type": "group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 45,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_YNMDGk": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_mzRJYz": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h4>Quicklinks</h4>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "menu_7ifaya": {
+                  "type": "menu",
+                  "name": "t:names.menu",
+                  "settings": {
+                    "menu": "main-menu",
+                    "heading": "",
+                    "menu_spacing": 12,
+                    "show_as_accordion": false,
+                    "accordion_icon": "caret",
+                    "accordion_dividers": false,
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "heading_preset": "h3",
+                    "link_preset": "paragraph",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_mzRJYz",
+                "menu_7ifaya"
+              ]
+            },
+            "group_xBWMtH": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "logo_dbFRw7": {
+                  "type": "logo",
+                  "name": "t:names.logo",
+                  "settings": {
+                    "inverse": false,
+                    "font": "heading",
+                    "unit": "pixel",
+                    "percent_width": 100,
+                    "pixel_height": 48,
+                    "custom_mobile_size": false,
+                    "unit_mobile": "percent",
+                    "percent_width_mobile": 100,
+                    "pixel_height_mobile": 120,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_gDmXnr": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>MeinKreativStein – das multifunktionale Spielgerät für Kinder ab 1 Jahr. Fördert Bewegung, Kreativität und Motorik.</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "logo_dbFRw7",
+                "text_gDmXnr"
+              ]
+            },
+            "group_jmX8bn": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_7QnFY9": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h4>Ihr Kontakt zu uns</h4>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "custom_liquid_xfYeb4": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": "<div id=\"collapseFooterHotline\" class=\"footer-column-content \" aria-labelledby=\"collapseFooterHotlineTitle\">\n\t\t\t\t\t\t\t\t<div class=\"footer-column-content-inner\">\n\t\t\t\t\t\t\t\t\t<p class=\"footer-contact-hotline\">\n\t\t\t\t\t\t\t\t\t\t<a href=\"tel:+4971232095200920663\">+49 7123 95 09 663</a>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\n<div id=\"collapseFooterOpening\" class=\"footer-column-content js-footer-column-content footer-contact\" aria-labelledby=\"collapseFooterHotlineTitle\">\n\t\t\t\t\t\t\t\t<div class=\"footer-column-content-inner\">\n\t\t\t\t\t\t\t\t\t<p class=\"footer-contact-opening\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"p-opening-hours\">Mo-Fr, 13:00 - 14:00 Uhr</span>\n\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\n<div id=\"collapseFooterEmail\" class=\"footer-column-content js-footer-column-content footer-contact\" aria-labelledby=\"collapseFooterHotlineTitle\">\n\t\t\t\t\t\t\t\t<div class=\"footer-column-content-inner\">\n\t\t\t\t\t\t\t\t\t<p class=\"footer-contact-email\">\n\t\t\t\t\t\t\t\t\t\t<a href=\"mailto:info@besonderes4kids.de\">info@besonderes4kids.de</a>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_7QnFY9",
+                "custom_liquid_xfYeb4"
+              ]
+            }
+          },
+          "block_order": [
+            "group_YNMDGk",
+            "group_xBWMtH",
+            "group_jmX8bn"
+          ]
+        }
+      },
+      "block_order": [
+        "group_qXbkpw"
+      ],
+      "name": "t:names.footer",
+      "settings": {
+        "section_width": "page-width",
+        "gap": 20,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 36,
+        "padding-block-end": 36
+      }
+    },
     "footer_utilities_jLGE8U": {
       "type": "footer-utilities",
       "blocks": {
@@ -48,6 +375,7 @@
     }
   },
   "order": [
+    "footer_EyfUR3",
     "footer_utilities_jLGE8U"
   ]
 }
