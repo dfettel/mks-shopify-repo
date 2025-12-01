@@ -4414,3 +4414,6 @@ footer * {
 .footer-utilities * {
   color: white !important;
 }
+.footer-utilities .terms-policies-popover a {
+  color: #000 !important;
+}
