@@ -12,23 +12,22 @@
     "hero_jVaWmY": {
       "type": "hero",
       "blocks": {
-        "video_wXQJgF": {
-          "type": "video",
-          "name": "t:names.video",
+        "image_TFqBC6": {
+          "type": "image",
+          "name": "t:names.image",
           "settings": {
-            "source": "uploaded",
-            "video": "shopify://files/videos/Transparentes_Video_von_spielenden_Kindern.mp4",
-            "video_url": "",
-            "video_autoplay": false,
-            "video_loop": false,
-            "alt": "",
+            "image": "shopify://shop_images/heroStartseite.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
             "custom_width": 100,
+            "width_mobile": "fill",
             "custom_width_mobile": 100,
-            "aspect_ratio": "auto",
+            "height": "fit",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 21,
+            "border_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -66,7 +65,7 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Alle Produkte",
+            "label": "Shop",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "style_class": "button",
@@ -79,7 +78,7 @@
         }
       },
       "block_order": [
-        "video_wXQJgF",
+        "image_TFqBC6",
         "text_YLPk4p",
         "button_H9gpTf"
       ],
@@ -116,11 +115,100 @@
         "padding-block-end": 72
       }
     },
+    "section_mnnPPJ": {
+      "type": "section",
+      "blocks": {
+        "text_gpgUgM": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>Inspiriert Spielen, Gestalten und Bewegen </h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_6KcmcJ": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Pädagogisches Multifunktions-Spielzeug, das die <br/>Entwicklung von Kindern durch Bewegung und<br/>fantasievollem gestalten fördert </p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_gpgUgM",
+        "text_6KcmcJ"
+      ],
+      "name": "t:names.rich_text_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
     "custom_liquid_8VEMFY": {
       "type": "custom-liquid",
       "name": "Anwendungen",
       "settings": {
-        "custom_liquid": "<!DOCTYPE html>\n<html lang=\"de\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Inspiriertes Spielen (Statisch)</title>\n    <!-- \n        Hinweis: In einer echten Shopify-Umgebung müssten diese Stile nicht \n        inline sein, aber sie definieren die spezifischen, nicht-standardmäßigen \n        Elemente (Kreise, Icons), die das Theme nicht nativ unterstützt.\n        Die verwendeten Klassennamen simulieren gängige Shopify-Dawn-Klassen.\n    -->\n    <style>\n        /* Grundlegende Typografie und Farben */\n        .inspired-play-section {\n            font-family: 'Inter', sans-serif; /* Simuliert die Verwendung der Theme-Schriftart */\n            --color-primary: #38a169; /* Grün */\n            --color-light: #e9f3e5; /* Helles Grün für Welle */\n            --color-gray-100: #f3f4f6; /* Hellgrau */\n            --color-white: #ffffff;\n            padding-top: 4rem; \n            padding-bottom: 4rem;\n        }\n\n        /* Setzt die Farbe für die Icons */\n        .color-primary-icon {\n            color: var(--color-primary);\n            stroke: var(--color-primary);\n        }\n\n        /* Responsive Grid-Logik (Simuliert 1 Spalte auf Mobile, 3 Spalten auf Desktop) */\n        .grid--3-col {\n            display: grid;\n            grid-template-columns: repeat(1, minmax(0, 1fr));\n            gap: 3rem; /* Abstand zwischen den Karten */\n        }\n\n        /* Desktop-Ansicht (md-Breakpoint, ca. 768px) */\n        @media (min-width: 768px) {\n            .grid--3-col {\n                grid-template-columns: repeat(3, minmax(0, 1fr));\n                gap: 2rem;\n            }\n        }\n\n        /* Kreis- und Bildstile (Custom CSS für das kreisförmige Design) */\n        .card-image-container {\n            width: 18rem;\n            height: 18rem;\n            border-radius: 50%;\n            overflow: hidden;\n            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);\n            border: 8px solid var(--color-white);\n            margin-left: auto;\n            margin-right: auto;\n        }\n\n        .card-image {\n            object-fit: cover;\n            width: 100%;\n            height: 100%;\n            transition: transform 300ms ease-in-out;\n        }\n        .card-image:hover {\n            transform: scale(1.05);\n        }\n\n        /* Style für das Icon-Overlay */\n        .icon-overlay-wrapper {\n            position: absolute;\n            left: 0;\n            right: 0;\n            bottom: 0;\n            transform: translateY(50%);\n            display: flex;\n            justify-content: center;\n        }\n        .icon-badge {\n            background-color: var(--color-white);\n            padding: 0.75rem; \n            border-radius: 50%;\n            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);\n            border: 4px solid var(--color-gray-100); \n        }\n\n        /* Utility-Klassen-Simulationen (Shopify-Klassen) */\n        .page-width { max-width: 1280px; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }\n        .text-center { text-align: center; }\n        .h1 { font-size: 3rem; font-weight: 700; line-height: 1.2; } /* Dawn h1 style */\n        .h4 { font-size: 1.25rem; font-weight: 600; } /* Dawn h4 style */\n\n    </style>\n</head>\n<body>\n\n    <!-- Haupt-Sektion Container (Simuliert eine Sektion) -->\n    <section class=\"inspired-play-section\">\n        <div class=\"page-width\">\n            \n            <!-- Titel und Untertitel (Verwendung von Shopify-ähnlichen Klassen) -->\n            <header class=\"text-center\" style=\"margin-bottom: 4rem;\">\n                <h1 class=\"h1\" style=\"color: #1f2937;\">\n                    Inspiriertes Spielen für jeden Ort\n                </h1>\n                <p style=\"font-size: 1.125rem; color: #4b5563; max-width: 42rem; margin-left: auto; margin-right: auto;\">\n                    Pädagogisches Spielzeug, das die Entwicklung von Kindern durch Bewegung, Gleichgewicht und fantasievolles Spiel fördert\n                </p>\n            </header>\n\n            <!-- Karten-Grid für die drei Säulen -->\n            <!-- Simuliert das gängige Dawn-Grid-Muster (grid grid--3-col) -->\n            <div class=\"grid--3-col text-center\">\n                \n                <!-- Karte 1: Kindergarten -->\n                <div class=\"grid__item\" style=\"display: flex; flex-direction: column; align-items: center;\">\n                    <div class=\"relative\" style=\"margin-bottom: 2.5rem;\">\n                        <!-- Bild/Kreis-Container -->\n                        <div class=\"card-image-container\">\n                             <!-- Platzhalterbild -->\n                            <img src=\"https://placehold.co/400x400/e9f3e5/38a169?text=KINDERGARTEN\" \n                                 alt=\"Kindergarten Szenen\" \n                                 class=\"card-image\"\n                            >\n                        </div>\n                        <!-- Icon-Overlay -->\n                        <div class=\"icon-overlay-wrapper\">\n                             <div class=\"icon-badge color-primary-icon\">\n                                <!-- Icon für Kindergarten (Gebäude) -->\n                                <svg style=\"width: 2rem; height: 2rem;\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h-2M5 21h2m7-9h3m-3 4h3M8 11h.01M8 15h.01M5 21V8a1 1 0 011-1h12a1 1 0 011 1v13\"></path></svg>\n                            </div>\n                        </div>\n                    </div>\n                    \n                    <h3 class=\"h4\" style=\"color: #1f2937; margin-top: 1.5rem;\">Kindergarten Szenen</h3>\n                    <p style=\"color: #6b7280; margin-top: 0.25rem;\">Gruppenspiel, Zusammenarbeit</p>\n                </div>\n\n                <!-- Karte 2: Zu Hause -->\n                <div class=\"grid__item\" style=\"display: flex; flex-direction: column; align-items: center;\">\n                    <div class=\"relative\" style=\"margin-bottom: 2.5rem;\">\n                        <!-- Bild/Kreis-Container -->\n                        <div class=\"card-image-container\">\n                            <!-- Platzhalterbild -->\n                            <img src=\"https://placehold.co/400x400/e9f3e5/38a169?text=FAMILIENNUTZUNG\" \n                                 alt=\"Zu Hause Nutzung\" \n                                 class=\"card-image\"\n                            >\n                        </div>\n                        <!-- Icon-Overlay -->\n                        <div class=\"icon-overlay-wrapper\">\n                            <div class=\"icon-badge color-primary-icon\">\n                                <!-- Icon für Zu Hause (Haus) -->\n                                <svg style=\"width: 2rem; height: 2rem;\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6\"></path></svg>\n                            </div>\n                        </div>\n                    </div>\n                    \n                    <h3 class=\"h4\" style=\"color: #1f2937; margin-top: 1.5rem;\">Nutzung Zu Hause</h3>\n                    <p style=\"color: #6b7280; margin-top: 0.25rem;\">Gruppenspiel, Zusammenarbeit</p>\n                </div>\n\n                <!-- Karte 3: Schule/Therapie -->\n                <div class=\"grid__item\" style=\"display: flex; flex-direction: column; align-items: center;\">\n                    <div class=\"relative\" style=\"margin-bottom: 2.5rem;\">\n                        <!-- Bild/Kreis-Container -->\n                        <div class=\"card-image-container\">\n                            <!-- Platzhalterbild -->\n                            <img src=\"https://placehold.co/400x400/e9f3e5/38a169?text=SCHULE+THERAPIE\" \n                                 alt=\"Schule/Therapie\" \n                                 class=\"card-image\"\n                            >\n                        </div>\n                        <!-- Icon-Overlay -->\n                        <div class=\"icon-overlay-wrapper\">\n                            <div class=\"icon-badge color-primary-icon\">\n                                <!-- Icon für Schule/Therapie (Schule/Medizin) -->\n                                <svg style=\"width: 2rem; height: 2rem;\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M8 14v3m4-3v3m4-3v3M3 21h18M5 3v18h14V3a2 2 0 00-2-2H7a2 2 0 00-2 2z\"></path></svg>\n                            </div>\n                        </div>\n                    </div>\n                    \n                    <h3 class=\"h4\" style=\"color: #1f2937; margin-top: 1.5rem;\">Schule/Therapie</h3>\n                    <p style=\"color: #6b7280; margin-top: 0.25rem;\">Gruppenspiel, Zusammenarbeit</p>\n                </div>\n                \n            </div>\n        </div>\n    </section>\n\n    <!-- Dekorativer Footer (Gewellte Linie und Biene) -->\n    <div class=\"relative\" style=\"width: 100%; overflow: hidden; margin-top: 3rem;\">\n        <!-- SVG für die gewellte Linie -->\n        <svg style=\"width: 100%; height: 4rem; fill: currentColor;\" viewBox=\"0 0 1440 100\" preserveAspectRatio=\"none\">\n            <path d=\"M0,70 Q360,30 720,70 T1440,70 V100 H0 Z\" fill=\"#e9f3e5\"></path>\n            <!-- Eine zweite Welle, um den \"gepunkteten\" Effekt zu imitieren -->\n            <path d=\"M0,75 Q360,40 720,80 T1440,80 V100 H0 Z\" fill=\"none\" stroke=\"#d1e3c4\" stroke-width=\"2\" stroke-dasharray=\"8, 8\"></path>\n        </svg>\n\n        <!-- Kleiner Biene/Insekt-Icon -->\n        <div class=\"absolute\" style=\"position: absolute; bottom: 1rem; right: 2rem; z-index: 10; padding: 0.5rem; border-radius: 50%; background-color: white; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);\">\n            <span role=\"img\" aria-label=\"Biene\" style=\"font-size: 1.875rem;\">\n                🐝\n            </span>\n        </div>\n    </div>\n\n</body>\n</html>",
+        "custom_liquid": "{%- comment -%}\n  Section: Inspired Play (Metaobject: anwendungsfall)\n  Clean Code Version - Optimized for \"Custom Liquid\" Block (No Schema)\n{%- endcomment -%}\n\n<style>\n    /* Grundlegende Typografie und Farben */\n    .inspired-play-section {\n        font-family: 'Inter', sans-serif; /* Simuliert die Verwendung der Theme-Schriftart */\n        --color-primary: #38a169; /* Grün */\n        --color-light: #e9f3e5; /* Helles Grün für Welle */\n        --color-gray-100: #f3f4f6; /* Hellgrau */\n        --color-white: #ffffff;\n        padding-top: 4rem; \n        padding-bottom: 4rem;\n        color: #1f2937;\n        width: 100%;\n        display: block;\n    }\n\n    /* Setzt die Farbe für die Icons */\n    .color-primary-icon {\n        color: var(--color-primary);\n        stroke: var(--color-primary);\n    }\n\n    /* Responsive Grid-Logik (Simuliert 1 Spalte auf Mobile, 3 Spalten auf Desktop) */\n    .grid--3-col {\n        display: grid;\n        grid-template-columns: repeat(1, minmax(0, 1fr));\n        gap: 3rem; /* Abstand zwischen den Karten */\n        padding: 0 1rem;\n    }\n\n    /* Desktop-Ansicht (md-Breakpoint, ca. 768px) */\n    @media (min-width: 768px) {\n        .grid--3-col {\n            grid-template-columns: repeat(3, minmax(0, 1fr));\n            gap: 2rem;\n        }\n    }\n\n    /* Kreis- und Bildstile (Custom CSS für das kreisförmige Design) */\n    .card-image-container {\n        width: 18rem;\n        height: 18rem;\n        border-radius: 50%;\n        overflow: hidden;\n        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);\n        border: 8px solid var(--color-white);\n        margin-left: auto;\n        margin-right: auto;\n        position: relative; /* Wichtig für absolute Positionierung der Slides */\n        z-index: 1;\n        background-color: #f0f0f0; /* Hintergrund während des Ladens */\n    }\n\n    /* Slideshow Styles */\n    .card-image {\n        object-fit: cover;\n        width: 100%;\n        height: 100%;\n        position: absolute; /* Bilder übereinander stapeln */\n        top: 0;\n        left: 0;\n        opacity: 0; /* Standardmäßig unsichtbar */\n        /* UPDATE: Dauer auf 1.2s erhöht für weicheres Fading */\n        transition: opacity 1.2s ease-in-out, transform 500ms ease-in-out;\n        pointer-events: none; /* Klicks gehen durch zum Container/Link */\n    }\n    \n    .card-image.active {\n        opacity: 1; /* Nur das aktive Bild ist sichtbar */\n        z-index: 1;\n    }\n\n    /* Hover-Effekt auf Container überträgt sich auf das aktive Bild */\n    .card-image-container:hover .card-image.active {\n        transform: scale(1.05);\n    }\n\n    /* Link Wrapper Styles */\n    .card-link-wrapper {\n        display: block;\n        text-decoration: none;\n        cursor: pointer;\n    }\n\n    /* Style für das Icon-Overlay */\n    .relative {\n        position: relative;\n    }\n\n    .icon-overlay-wrapper {\n        position: absolute;\n        left: 0;\n        right: 0;\n        bottom: 0;\n        transform: translateY(50%);\n        display: flex;\n        justify-content: center;\n        z-index: 2;\n        pointer-events: none; /* Klicks gehen durch, falls nötig */\n    }\n    .icon-badge {\n        background-color: var(--color-white);\n        padding: 0.75rem; \n        border-radius: 50%;\n        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);\n        border: 4px solid var(--color-gray-100); \n        display: flex;\n        align-items: center;\n        justify-content: center;\n        width: 4rem; /* Fixe Größe für Konsistenz */\n        height: 4rem;\n    }\n    \n    .icon-badge svg {\n        width: 2rem; \n        height: 2rem;\n    }\n\n    /* Utility-Klassen-Simulationen (Shopify-Klassen) */\n    .page-width { max-width: 1280px; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }\n    .text-center { text-align: center; }\n    .h1 { font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin: 0 0 1rem 0; } /* Dawn h1 style angepasst */\n    .h4 { font-size: 1.25rem; font-weight: 600; margin: 0; } /* Dawn h4 style */\n    \n    @media (min-width: 768px) {\n        .h1 { font-size: 3rem; }\n    }\n\n</style>\n\n<!-- Haupt-Sektion Container -->\n<section class=\"inspired-play-section\">\n    <div class=\"page-width\">\n        \n        <!-- Karten-Grid -->\n        <div class=\"grid--3-col text-center\">\n            \n            {% comment %} START: Liquid Loop über Metaobjekte {% endcomment %}\n            {% assign anwendungsfaelle = shop.metaobjects.anwendungsfall.values %}\n            \n            {% for fall in anwendungsfaelle limit: 3 %}\n            <div class=\"grid__item\" style=\"display: flex; flex-direction: column; align-items: center;\">\n                <div class=\"relative\" style=\"margin-bottom: 2.5rem;\">\n                    \n                    <!-- Bild/Kreis-Container als Link -->\n                    <a href=\"{{ fall.target.value.url | default: '#' }}\" class=\"card-link-wrapper\">\n                        <div class=\"card-image-container\" id=\"slideshow-{{ forloop.index }}\">\n                            \n                            {% if fall.gallery.value != blank %}\n                                {% for bild in fall.gallery.value %}\n                                    <img \n                                        src=\"{{ bild | image_url: width: 600 }}\" \n                                        alt=\"{{ fall.title }}\" \n                                        class=\"card-image {% if forloop.first %}active{% endif %}\"\n                                        loading=\"lazy\"\n                                        width=\"400\"\n                                        height=\"400\"\n                                    >\n                                {% endfor %}\n                            {% else %}\n                                <!-- Fallback, falls Gallery leer ist -->\n                                {{ 'image' | placeholder_svg_tag: 'card-image active' }}\n                            {% endif %}\n                            \n                        </div>\n                    </a>\n\n                    <!-- Icon-Overlay (Smart Logic basierend auf Titel) -->\n                    <div class=\"icon-overlay-wrapper\">\n                         <div class=\"icon-badge color-primary-icon\">\n                            {% assign title_lower = fall.title | downcase %}\n                            \n                            {% if title_lower contains 'kindergarten' or title_lower contains 'kita' %}\n                                <!-- Icon: Gebäude -->\n                                <svg fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h-2M5 21h2m7-9h3m-3 4h3M8 11h.01M8 15h.01M5 21V8a1 1 0 011-1h12a1 1 0 011 1v13\"></path></svg>\n                            \n                            {% elsif title_lower contains 'haus' or title_lower contains 'home' or title_lower contains 'zuhause' or title_lower contains 'privat' %}\n                                <!-- Icon: Haus -->\n                                <svg fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6\"></path></svg>\n                            \n                            {% elsif title_lower contains 'schule' or title_lower contains 'therapie' or title_lower contains 'sport' %}\n                                <!-- Icon: Medizin/Schule -->\n                                <svg fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M8 14v3m4-3v3m4-3v3M3 21h18M5 3v18h14V3a2 2 0 00-2-2H7a2 2 0 00-2 2z\"></path></svg>\n                            \n                            {% else %}\n                                <!-- Icon: Default Stern -->\n                                <svg fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z\"></path></svg>\n                            {% endif %}\n                        </div>\n                    </div>\n                </div>\n                \n                <h3 class=\"h4\" style=\"color: #1f2937; margin-top: 1.5rem;\">{{ fall.title }}</h3>\n            </div>\n            {% endfor %}\n            {% comment %} ENDE: Liquid Loop {% endcomment %}\n            \n        </div>\n    </div>\n</section>\n\n<!-- Dekorativer Footer (Gewellte Linie und Biene) -->\n<div class=\"relative\" style=\"width: 100%; overflow: hidden; margin-top: 3rem;\">\n    <!-- SVG für die gewellte Linie -->\n    <svg style=\"width: 100%; height: 4rem; fill: currentColor;\" viewBox=\"0 0 1440 100\" preserveAspectRatio=\"none\">\n        <path d=\"M0,70 Q360,30 720,70 T1440,70 V100 H0 Z\" fill=\"#e9f3e5\"></path>\n        <!-- Eine zweite Welle, um den \"gepunkteten\" Effekt zu imitieren -->\n        <path d=\"M0,75 Q360,40 720,80 T1440,80 V100 H0 Z\" fill=\"none\" stroke=\"#d1e3c4\" stroke-width=\"2\" stroke-dasharray=\"8, 8\"></path>\n    </svg>\n\n    <!-- Kleiner Biene/Insekt-Icon -->\n    <div class=\"absolute\" style=\"position: absolute; bottom: 1rem; right: 2rem; z-index: 10; padding: 0.5rem; border-radius: 50%; background-color: white; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);\">\n        <span role=\"img\" aria-label=\"Biene\" style=\"font-size: 1.875rem;\">\n            🐝\n        </span>\n    </div>\n</div>\n\n<!-- JavaScript für gestaffelte Slideshow (bleibt unverändert) -->\n<script>\n    document.addEventListener('DOMContentLoaded', () => {\n        // Alle Slideshow-Container selektieren\n        const slideshowContainers = document.querySelectorAll('.card-image-container');\n        \n        // Globaler Zähler für den Takt\n        let globalTick = 0;\n\n        // Prüfen, ob Container vorhanden sind\n        if (slideshowContainers.length > 0) {\n            // Intervall startet, löst jede Sekunde (1000ms) ein Event aus\n            setInterval(() => {\n                \n                // Bestimmen, welcher Container jetzt dran ist (Round-Robin Verfahren: 0, 1, 2, 0, 1, 2 ...)\n                const activeContainerIndex = globalTick % slideshowContainers.length;\n                const container = slideshowContainers[activeContainerIndex];\n                \n                const slides = container.querySelectorAll('.card-image');\n                \n                // Nur wechseln, wenn mehr als 1 Slide in diesem Container vorhanden ist\n                if (slides.length > 1) {\n                    // Den aktuell sichtbaren Slide in DIESEM Container finden\n                    const currentActive = container.querySelector('.card-image.active');\n                    let nextIndex = 0;\n\n                    if (currentActive) {\n                        // Aktuellen Slide ausblenden\n                        currentActive.classList.remove('active');\n                        \n                        // Index des aktuellen Slides im NodeList-Array finden, um den nächsten zu bestimmen\n                        const allSlidesArray = Array.from(slides);\n                        const currentIndex = allSlidesArray.indexOf(currentActive);\n                        nextIndex = (currentIndex + 1) % slides.length;\n                    }\n\n                    // Nächsten Slide einblenden\n                    slides[nextIndex].classList.add('active');\n                }\n\n                // Globalen Ticker für den nächsten Durchlauf erhöhen\n                globalTick++;\n                \n            }, 1000); // Taktung von 1 Sekunde für den Wechsel des *nächsten* Containers\n        }\n    });\n</script>",
         "color_scheme": "",
         "section_width": "full-width",
         "padding-block-start": 0,
@@ -324,7 +412,7 @@
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
-                    "label": "Alle Produkte",
+                    "label": "Shop",
                     "link": "shopify://collections/all",
                     "open_in_new_tab": false,
                     "style_class": "button",
@@ -465,10 +553,10 @@
         "padding-block-end": 48
       }
     },
-    "section_KYdBT9": {
+    "section_pG63ji": {
       "type": "section",
       "blocks": {
-        "text_fDLwrc": {
+        "text_j3EPyi": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
@@ -494,241 +582,20 @@
           },
           "blocks": {}
         },
-        "accordion_wxyNPg": {
-          "type": "accordion",
-          "name": "t:names.accordion",
+        "custom_liquid_8xdYRe": {
+          "type": "custom-liquid",
+          "name": "t:names.custom_liquid",
           "settings": {
-            "icon": "plus",
-            "dividers": true,
-            "type_preset": "h5",
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "custom_liquid": "<section class=\"faq-timeline-section\">\n  <div class=\"page-width\">\n    \n    <div class=\"faq-container\">\n      \n      <!-- Die vertikale Linie im Hintergrund -->\n      <div class=\"faq-line-track\"></div>\n\n      {% assign faq_items = shop.metaobjects.faq.values %}\n      \n      {% if faq_items != blank %}\n        {% for entry in faq_items %}\n          <div class=\"faq-row\">\n            \n            <!-- Der Punkt auf der Zeitlinie -->\n            <div class=\"faq-marker\">\n              <div class=\"faq-dot\"></div>\n            </div>\n\n            <!-- Die Karte (Accordion) -->\n            <div class=\"faq-card-wrapper\">\n              <!-- Wir nutzen jetzt DIVs statt DETAILS für bessere Animation -->\n              <div class=\"faq-accordion\">\n                \n                <button type=\"button\" class=\"faq-summary\">\n                  <span class=\"faq-question\">{{ entry.question }}</span>\n                  <div class=\"faq-toggle-btn\">\n                    <span class=\"icon-plus\">+</span>\n                    <span class=\"icon-minus\">-</span>\n                  </div>\n                </button>\n                \n                <div class=\"faq-answer-wrapper\">\n                  <div class=\"faq-answer-inner\">\n                    \n                    <!-- Layout Grid: Bild Links, Text Rechts -->\n                    <div class=\"faq-content-grid\">\n                      \n                      {% comment %} Bild (Links) {% endcomment %}\n                      {% if entry.image %}\n                        <div class=\"faq-image-col\">\n                          <div class=\"faq-image-card\">\n                            <img \n                              src=\"{{ entry.image | image_url: width: 600 }}\" \n                              alt=\"{{ entry.question | escape }}\"\n                              loading=\"lazy\"\n                            >\n                          </div>\n                        </div>\n                      {% endif %}\n\n                      {% comment %} Text (Rechts) {% endcomment %}\n                      <div class=\"faq-text-col\">\n                        <div class=\"rte\">\n                          {{ entry.answer | metafield_tag }}\n                        </div>\n                      </div>\n\n                    </div>\n\n                  </div>\n                </div>\n\n              </div>\n            </div>\n\n          </div>\n        {% endfor %}\n      {% else %}\n        <p style=\"text-align:center;\">Keine FAQ Einträge gefunden.</p>\n      {% endif %}\n\n    </div>\n  </div>\n</section>\n\n<style>\n  /* --- Grundeinstellungen --- */\n  .faq-timeline-section {\n    padding: 4rem 0;\n    position: relative;\n    overflow: hidden; \n  }\n\n  .faq-container {\n    position: relative;\n    max-width: 900px;\n    margin: 0 auto;\n  }\n\n  /* --- Die vertikale Linie --- */\n  .faq-line-track {\n    position: absolute;\n    /* Exakt mittig in der 60px Spalte */\n    left: 30px; \n    top: 20px;\n    bottom: 20px;\n    width: 2px;\n    background-color: #3ba53b; \n    z-index: 0;\n    transform: translateX(-50%);\n  }\n\n  /* --- Eine Zeile (Punkt + Karte) --- */\n  .faq-row {\n    display: flex;\n    align-items: flex-start;\n    margin-bottom: 1.5rem;\n    position: relative;\n    z-index: 1;\n  }\n\n  /* --- Der Punkt (Marker) --- */\n  .faq-marker {\n    width: 60px; /* Feste Breite */\n    flex-shrink: 0;\n    display: flex;\n    justify-content: center;\n    padding-top: 1.5rem; /* Vertikal zentriert zum Header */\n  }\n\n  .faq-dot {\n    width: 18px;\n    height: 18px;\n    background-color: #fff;\n    border: 3px solid #3ba53b;\n    border-radius: 50%;\n    position: relative;\n    z-index: 2;\n    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, background-color 0.3s ease;\n  }\n\n  /* Aktiv-Zustand des Punktes */\n  .faq-dot.active {\n    transform: scale(1.4); /* Wird deutlich größer */\n    background-color: #fff; /* Bleibt weiß */\n    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.8); /* Weißer \"Halo\" um den Punkt */\n    border-color: #3ba53b;\n  }\n\n  /* --- Die Karte Wrapper --- */\n  .faq-card-wrapper {\n    flex-grow: 1;\n    min-width: 0; \n  }\n\n  /* --- Das Accordion Element (Container) --- */\n  .faq-accordion {\n    background: #ffffff;\n    border-radius: 12px;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);\n    overflow: hidden;\n    border: 1px solid rgba(0,0,0,0.05);\n    transition: box-shadow 0.3s ease;\n  }\n\n  /* --- Der Header (Button) --- */\n  .faq-summary {\n    width: 100%;\n    display: flex;\n    align-items: stretch;\n    justify-content: space-between;\n    cursor: pointer;\n    min-height: 70px;\n    padding: 0;\n    position: relative;\n    transition: background-color 0.3s ease;\n    border: none;\n    background: none;\n    text-align: left;\n    outline: none;\n  }\n\n  .faq-question {\n    padding: 1.5rem;\n    font-size: 1.1rem;\n    font-weight: 600;\n    color: #333;\n    display: flex;\n    align-items: center;\n    line-height: 1.4;\n    transition: color 0.3s ease;\n  }\n\n  /* --- Toggle Button --- */\n  .faq-toggle-btn {\n    width: 70px;\n    background-color: #3ba53b;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-shrink: 0;\n    color: white;\n    font-size: 1.5rem;\n    font-weight: 300;\n    transition: background-color 0.3s ease;\n  }\n\n  .icon-plus, .icon-minus { display: block; line-height: 1; }\n  .icon-minus { display: none; }\n\n  /* --- ANIMATION (Double Layer) --- */\n  \n  /* 1. Wrapper für die Höhe (Grid Trick) */\n  .faq-answer-wrapper {\n    display: grid;\n    grid-template-rows: 0fr;\n    transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Weichere Kurve */\n  }\n\n  /* 2. Innerer Container für Inhalt (Fade & Slide) */\n  .faq-answer-inner {\n    overflow: hidden;\n    opacity: 0;\n    transform: translateY(-20px); \n    transition: opacity 0.4s ease 0.1s, transform 0.4s ease 0.1s;\n    min-height: 0; /* Wichtig für Firefox */\n    /* Padding hier hinzufügen, damit es nicht animiert wird */\n    padding: 0;\n  }\n\n  /* --- INHALT STYLING (Wiederhergestellt) --- */\n  \n  /* Grid für Bild + Text */\n  .faq-content-grid {\n    display: flex;\n    gap: 2rem;\n    padding: 2rem; /* Padding für den gesamten Inhalt */\n    align-items: flex-start;\n  }\n\n  /* Text Spalte */\n  .faq-text-col {\n    flex: 1;\n    color: #555;\n    line-height: 1.6;\n  }\n\n  /* Bild Spalte (feste Breite) */\n  .faq-image-col {\n    flex: 0 0 220px;\n    width: 220px;\n  }\n\n  /* Bild Karte (Look der Spielideen) */\n  .faq-image-card {\n    width: 100%;\n    aspect-ratio: 4 / 3; /* Format 4:3 */\n    border-radius: 12px; /* Runde Ecken */\n    overflow: hidden;\n    background-color: #f4f4f4;\n    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sanfter Schatten */\n  }\n\n  .faq-image-card img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    display: block;\n  }\n\n  /* --- ZUSTAND: GEÖFFNET (via .is-open Klasse) --- */\n\n  /* Höhe auf 100% */\n  .faq-accordion.is-open .faq-answer-wrapper {\n    grid-template-rows: 1fr;\n  }\n\n  /* Inhalt sichtbar & am Platz */\n  .faq-accordion.is-open .faq-answer-inner {\n    opacity: 1;\n    transform: translateY(0);\n  }\n\n  /* Farben im Header ändern */\n  .faq-accordion.is-open .faq-summary { background-color: #3ba53b; }\n  .faq-accordion.is-open .faq-question { color: #ffffff; }\n  .faq-accordion.is-open .faq-toggle-btn { background-color: #3ba53b; }\n  \n  /* Icon Wechsel */\n  .faq-accordion.is-open .icon-plus { display: none; }\n  .faq-accordion.is-open .icon-minus { display: block; }\n\n  /* Hover Effekt für Dot (nur wenn nicht aktiv) */\n  .faq-row:hover .faq-dot:not(.active) {\n    transform: scale(1.15);\n    background-color: #fff; \n    border-color: #3ba53b;\n  }\n\n  /* --- Mobile Anpassung --- */\n  @media (max-width: 750px) {\n    .faq-line-track {\n      left: 20px; \n    }\n    .faq-marker {\n      width: 40px; \n      padding-top: 1.25rem;\n    }\n    .faq-dot {\n      width: 14px;\n      height: 14px;\n      border-width: 2px;\n    }\n    \n    .faq-summary { min-height: 60px; }\n    .faq-question { padding: 1rem; font-size: 1rem; }\n    .faq-toggle-btn { width: 50px; }\n\n    /* Mobile: Layout stapeln */\n    .faq-content-grid {\n      flex-direction: column;\n      padding: 1.5rem; /* Etwas weniger Padding auf Mobile */\n      gap: 1.5rem;\n    }\n    \n    .faq-image-col {\n      width: 100%; /* Bild volle Breite */\n      flex: none;\n    }\n  }\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function() {\n    // Hole alle Header-Buttons\n    const summaries = document.querySelectorAll('.faq-summary');\n\n    summaries.forEach((summary) => {\n      summary.addEventListener('click', function() {\n        // Finde das Eltern-Element (die Karte) und die Zeile\n        const accordion = this.closest('.faq-accordion');\n        const row = accordion.closest('.faq-row');\n        const dot = row.querySelector('.faq-dot');\n\n        // Toggle Klasse 'is-open' auf der Karte\n        const isOpen = accordion.classList.toggle('is-open');\n\n        // Toggle Klasse 'active' auf dem Punkt\n        if (isOpen) {\n          dot.classList.add('active');\n          \n          // Optional: Wenn du möchtest, dass sich andere schließen (Accordion-Effekt),\n          // dann einkommentieren:\n          /*\n          document.querySelectorAll('.faq-accordion').forEach(el => {\n            if (el !== accordion && el.classList.contains('is-open')) {\n              el.classList.remove('is-open');\n              const otherRow = el.closest('.faq-row');\n              if(otherRow) otherRow.querySelector('.faq-dot').classList.remove('active');\n            }\n          });\n          */\n\n        } else {\n          dot.classList.remove('active');\n        }\n      });\n    });\n  });\n</script>"
           },
-          "blocks": {
-            "accordion_row_CVq7yN": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "{{ metaobjects.faq[\"wo-wird-der-mein-kreativ-stein-und-mein-verwandlungs-stein-hergestellt\"].question.value }}",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 84
-              },
-              "blocks": {
-                "text_fTcAG8": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>{{ metaobjects.faq[\"wo-wird-der-mein-kreativ-stein-und-mein-verwandlungs-stein-hergestellt\"].answer | metafield_tag }}</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": true,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_fTcAG8"
-              ]
-            },
-            "accordion_row_Pk4HLq": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "{{ metaobjects.faq[\"wie-lange-nutzen-kinder-den-spielsteinen\"].question.value }}",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_cmKYNp": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>{{ metaobjects.faq[\"wie-lange-nutzen-kinder-den-spielsteinen\"].answer | metafield_tag }}</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_cmKYNp"
-              ]
-            },
-            "accordion_row_xcYdaM": {
-              "type": "_accordion-row",
-              "name": "t:names.accordion_row",
-              "settings": {
-                "heading": "{{ metaobjects.faq[\"warum-ist-dieses-material-etwas-so-besonderes-hergestellt-aus-epp\"].question.value }}",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_tbfNjr": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>{{ metaobjects.faq[\"warum-ist-dieses-material-etwas-so-besonderes-hergestellt-aus-epp\"].answer | metafield_tag }}</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_tbfNjr"
-              ]
-            },
-            "accordion_row_zqVNYU": {
-              "type": "_accordion-row",
-              "name": "t:names.accordion_row",
-              "settings": {
-                "heading": "{{ metaobjects.faq[\"wie-kann-ich-die-kreativsteine-reinigen\"].question.value }}",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_bYW69E": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>{{ metaobjects.faq[\"wie-kann-ich-die-kreativsteine-reinigen\"].answer | metafield_tag }}</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_bYW69E"
-              ]
-            },
-            "accordion_row_mfDPwg": {
-              "type": "_accordion-row",
-              "name": "t:names.accordion_row",
-              "settings": {
-                "heading": "{{ metaobjects.faq[\"warum-sind-die-spielsteine-fur-kleinkinder-ab-1-jahr-so-wichtig\"].question.value }}",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_DN48BJ": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>{{ metaobjects.faq[\"warum-sind-die-spielsteine-fur-kleinkinder-ab-1-jahr-so-wichtig\"].answer | metafield_tag }}</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_DN48BJ"
-              ]
-            }
-          },
-          "block_order": [
-            "accordion_row_CVq7yN",
-            "accordion_row_Pk4HLq",
-            "accordion_row_xcYdaM",
-            "accordion_row_zqVNYU",
-            "accordion_row_mfDPwg"
-          ]
+          "blocks": {}
         }
       },
       "block_order": [
-        "text_fDLwrc",
-        "accordion_wxyNPg"
+        "text_j3EPyi",
+        "custom_liquid_8xdYRe"
       ],
-      "name": "t:names.faq_section",
+      "name": "t:names.custom_section",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -737,7 +604,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
+        "gap": 12,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
@@ -753,15 +620,16 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 70,
+        "padding-block-end": 35
       }
     }
   },
   "order": [
     "hero_jVaWmY",
+    "section_mnnPPJ",
     "custom_liquid_8VEMFY",
     "product_list_3hQ4dz",
-    "section_KYdBT9"
+    "section_pG63ji"
   ]
 }

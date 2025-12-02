@@ -34,7 +34,7 @@
             "text": "Spiele-APP \"MeinKreativStein\" - Mehr info im Download Bereich",
             "link": "",
             "font": "var(--font-subheading--family)",
-            "font_size": "0.75rem",
+            "font_size": "1rem",
             "weight": "",
             "letter_spacing": "normal",
             "case": "none"

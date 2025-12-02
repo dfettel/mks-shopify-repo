@@ -1,0 +1,78 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "Title",
+          "settings": {
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "page-content": {
+          "type": "page-content",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "page-content"
+      ],
+      "custom_css": [
+        "* {background-color: transparent;}"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    },
+    "custom_liquid_UpgqAt": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<section class=\"faq-timeline-section\">\n  <div class=\"page-width\">\n    \n    <div class=\"faq-container\">\n      \n      <!-- Die vertikale Linie im Hintergrund -->\n      <div class=\"faq-line-track\"></div>\n\n      {% assign faq_items = shop.metaobjects.faq.values %}\n      \n      {% if faq_items != blank %}\n        {% for entry in faq_items %}\n          <div class=\"faq-row\">\n            \n            <!-- Der Punkt auf der Zeitlinie -->\n            <div class=\"faq-marker\">\n              <div class=\"faq-dot\"></div>\n            </div>\n\n            <!-- Die Karte (Accordion) -->\n            <div class=\"faq-card-wrapper\">\n              <!-- Wir nutzen jetzt DIVs statt DETAILS für bessere Animation -->\n              <div class=\"faq-accordion\">\n                \n                <button type=\"button\" class=\"faq-summary\">\n                  <span class=\"faq-question\">{{ entry.question }}</span>\n                  <div class=\"faq-toggle-btn\">\n                    <span class=\"icon-plus\">+</span>\n                    <span class=\"icon-minus\">-</span>\n                  </div>\n                </button>\n                \n                <div class=\"faq-answer-wrapper\">\n                  <div class=\"faq-answer-inner\">\n                    \n                    <!-- Layout Grid: Bild Links, Text Rechts -->\n                    <div class=\"faq-content-grid\">\n                      \n                      {% comment %} Bild (Links) {% endcomment %}\n                      {% if entry.image %}\n                        <div class=\"faq-image-col\">\n                          <div class=\"faq-image-card\">\n                            <img \n                              src=\"{{ entry.image | image_url: width: 600 }}\" \n                              alt=\"{{ entry.question | escape }}\"\n                              loading=\"lazy\"\n                            >\n                          </div>\n                        </div>\n                      {% endif %}\n\n                      {% comment %} Text (Rechts) {% endcomment %}\n                      <div class=\"faq-text-col\">\n                        <div class=\"rte\">\n                          {{ entry.answer | metafield_tag }}\n                        </div>\n                      </div>\n\n                    </div>\n\n                  </div>\n                </div>\n\n              </div>\n            </div>\n\n          </div>\n        {% endfor %}\n      {% else %}\n        <p style=\"text-align:center;\">Keine FAQ Einträge gefunden.</p>\n      {% endif %}\n\n    </div>\n  </div>\n</section>\n\n<style>\n  /* --- Grundeinstellungen --- */\n  .faq-timeline-section {\n    padding: 4rem 0;\n    position: relative;\n    overflow: hidden; \n  }\n\n  .faq-container {\n    position: relative;\n    max-width: 900px;\n    margin: 0 auto;\n  }\n\n  /* --- Die vertikale Linie --- */\n  .faq-line-track {\n    position: absolute;\n    /* Exakt mittig in der 60px Spalte */\n    left: 30px; \n    top: 20px;\n    bottom: 20px;\n    width: 2px;\n    background-color: #3ba53b; \n    z-index: 0;\n    transform: translateX(-50%);\n  }\n\n  /* --- Eine Zeile (Punkt + Karte) --- */\n  .faq-row {\n    display: flex;\n    align-items: flex-start;\n    margin-bottom: 1.5rem;\n    position: relative;\n    z-index: 1;\n  }\n\n  /* --- Der Punkt (Marker) --- */\n  .faq-marker {\n    width: 60px; /* Feste Breite */\n    flex-shrink: 0;\n    display: flex;\n    justify-content: center;\n    padding-top: 1.5rem; /* Vertikal zentriert zum Header */\n  }\n\n  .faq-dot {\n    width: 18px;\n    height: 18px;\n    background-color: #fff;\n    border: 3px solid #3ba53b;\n    border-radius: 50%;\n    position: relative;\n    z-index: 2;\n    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, background-color 0.3s ease;\n  }\n\n  /* Aktiv-Zustand des Punktes */\n  .faq-dot.active {\n    transform: scale(1.4); /* Wird deutlich größer */\n    background-color: #fff; /* Bleibt weiß */\n    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.8); /* Weißer \"Halo\" um den Punkt */\n    border-color: #3ba53b;\n  }\n\n  /* --- Die Karte Wrapper --- */\n  .faq-card-wrapper {\n    flex-grow: 1;\n    min-width: 0; \n  }\n\n  /* --- Das Accordion Element (Container) --- */\n  .faq-accordion {\n    background: #ffffff;\n    border-radius: 12px;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);\n    overflow: hidden;\n    border: 1px solid rgba(0,0,0,0.05);\n    transition: box-shadow 0.3s ease;\n  }\n\n  /* --- Der Header (Button) --- */\n  .faq-summary {\n    width: 100%;\n    display: flex;\n    align-items: stretch;\n    justify-content: space-between;\n    cursor: pointer;\n    min-height: 70px;\n    padding: 0;\n    position: relative;\n    transition: background-color 0.3s ease;\n    border: none;\n    background: none;\n    text-align: left;\n    outline: none;\n  }\n\n  .faq-question {\n    padding: 1.5rem;\n    font-size: 1.1rem;\n    font-weight: 600;\n    color: #333;\n    display: flex;\n    align-items: center;\n    line-height: 1.4;\n    transition: color 0.3s ease;\n  }\n\n  /* --- Toggle Button --- */\n  .faq-toggle-btn {\n    width: 70px;\n    background-color: #3ba53b;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-shrink: 0;\n    color: white;\n    font-size: 1.5rem;\n    font-weight: 300;\n    transition: background-color 0.3s ease;\n  }\n\n  .icon-plus, .icon-minus { display: block; line-height: 1; }\n  .icon-minus { display: none; }\n\n  /* --- ANIMATION (Double Layer) --- */\n  \n  /* 1. Wrapper für die Höhe (Grid Trick) */\n  .faq-answer-wrapper {\n    display: grid;\n    grid-template-rows: 0fr;\n    transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Weichere Kurve */\n  }\n\n  /* 2. Innerer Container für Inhalt (Fade & Slide) */\n  .faq-answer-inner {\n    overflow: hidden;\n    opacity: 0;\n    transform: translateY(-20px); \n    transition: opacity 0.4s ease 0.1s, transform 0.4s ease 0.1s;\n    min-height: 0; /* Wichtig für Firefox */\n    /* Padding hier hinzufügen, damit es nicht animiert wird */\n    padding: 0;\n  }\n\n  /* --- INHALT STYLING (Wiederhergestellt) --- */\n  \n  /* Grid für Bild + Text */\n  .faq-content-grid {\n    display: flex;\n    gap: 2rem;\n    padding: 2rem; /* Padding für den gesamten Inhalt */\n    align-items: flex-start;\n  }\n\n  /* Text Spalte */\n  .faq-text-col {\n    flex: 1;\n    color: #555;\n    line-height: 1.6;\n  }\n\n  /* Bild Spalte (feste Breite) */\n  .faq-image-col {\n    flex: 0 0 220px;\n    width: 220px;\n  }\n\n  /* Bild Karte (Look der Spielideen) */\n  .faq-image-card {\n    width: 100%;\n    aspect-ratio: 4 / 3; /* Format 4:3 */\n    border-radius: 12px; /* Runde Ecken */\n    overflow: hidden;\n    background-color: #f4f4f4;\n    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sanfter Schatten */\n  }\n\n  .faq-image-card img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    display: block;\n  }\n\n  /* --- ZUSTAND: GEÖFFNET (via .is-open Klasse) --- */\n\n  /* Höhe auf 100% */\n  .faq-accordion.is-open .faq-answer-wrapper {\n    grid-template-rows: 1fr;\n  }\n\n  /* Inhalt sichtbar & am Platz */\n  .faq-accordion.is-open .faq-answer-inner {\n    opacity: 1;\n    transform: translateY(0);\n  }\n\n  /* Farben im Header ändern */\n  .faq-accordion.is-open .faq-summary { background-color: #3ba53b; }\n  .faq-accordion.is-open .faq-question { color: #ffffff; }\n  .faq-accordion.is-open .faq-toggle-btn { background-color: #3ba53b; }\n  \n  /* Icon Wechsel */\n  .faq-accordion.is-open .icon-plus { display: none; }\n  .faq-accordion.is-open .icon-minus { display: block; }\n\n  /* Hover Effekt für Dot (nur wenn nicht aktiv) */\n  .faq-row:hover .faq-dot:not(.active) {\n    transform: scale(1.15);\n    background-color: #fff; \n    border-color: #3ba53b;\n  }\n\n  /* --- Mobile Anpassung --- */\n  @media (max-width: 750px) {\n    .faq-line-track {\n      left: 20px; \n    }\n    .faq-marker {\n      width: 40px; \n      padding-top: 1.25rem;\n    }\n    .faq-dot {\n      width: 14px;\n      height: 14px;\n      border-width: 2px;\n    }\n    \n    .faq-summary { min-height: 60px; }\n    .faq-question { padding: 1rem; font-size: 1rem; }\n    .faq-toggle-btn { width: 50px; }\n\n    /* Mobile: Layout stapeln */\n    .faq-content-grid {\n      flex-direction: column;\n      padding: 1.5rem; /* Etwas weniger Padding auf Mobile */\n      gap: 1.5rem;\n    }\n    \n    .faq-image-col {\n      width: 100%; /* Bild volle Breite */\n      flex: none;\n    }\n  }\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function() {\n    // Hole alle Header-Buttons\n    const summaries = document.querySelectorAll('.faq-summary');\n\n    summaries.forEach((summary) => {\n      summary.addEventListener('click', function() {\n        // Finde das Eltern-Element (die Karte) und die Zeile\n        const accordion = this.closest('.faq-accordion');\n        const row = accordion.closest('.faq-row');\n        const dot = row.querySelector('.faq-dot');\n\n        // Toggle Klasse 'is-open' auf der Karte\n        const isOpen = accordion.classList.toggle('is-open');\n\n        // Toggle Klasse 'active' auf dem Punkt\n        if (isOpen) {\n          dot.classList.add('active');\n          \n          // Optional: Wenn du möchtest, dass sich andere schließen (Accordion-Effekt),\n          // dann einkommentieren:\n          /*\n          document.querySelectorAll('.faq-accordion').forEach(el => {\n            if (el !== accordion && el.classList.contains('is-open')) {\n              el.classList.remove('is-open');\n              const otherRow = el.closest('.faq-row');\n              if(otherRow) otherRow.querySelector('.faq-dot').classList.remove('active');\n            }\n          });\n          */\n\n        } else {\n          dot.classList.remove('active');\n        }\n      });\n    });\n  });\n</script>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_UpgqAt"
+  ]
+}

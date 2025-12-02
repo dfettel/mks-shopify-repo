@@ -1,0 +1,78 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "Title",
+          "settings": {
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "page-content": {
+          "type": "page-content",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "page-content"
+      ],
+      "custom_css": [
+        "* {background-color: transparent;}"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    },
+    "custom_liquid_nyqn9i": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "{% assign current_case = page.metafields.custom.anwendungsfall.value %}\n\n<section class=\"use-case-gallery-section\">\n  <div class=\"page-width\">\n    \n    {% comment %} Optional: Fallback Logik für Handle {% endcomment %}\n    {% if case_handle %}\n      {% assign current_case = shop.metaobjects.anwendungsfall[case_handle] %}\n    {% endif %}\n\n    {% if current_case %}\n      \n      {% assign gallery = current_case.gallery.value %}\n\n      {% if gallery != blank %}\n        <div class=\"uc-grid\">\n          {% for file in gallery %}\n            <div class=\"uc-card\">\n              <div class=\"uc-image-wrapper\">\n                <img\n                  src=\"{{ file | image_url: width: 800 }}\"\n                  alt=\"{{ file.alt | escape }}\"\n                  loading=\"lazy\"\n                  width=\"800\"\n                  height=\"800\"\n                >\n              </div>\n              {% if file.alt != blank %}\n                <div class=\"uc-caption\">\n                  {{ file.alt }}\n                </div>\n              {% endif %}\n            </div>\n          {% endfor %}\n        </div>\n      {% else %}\n        <div class=\"uc-empty-state\">\n          <p>Für diesen Anwendungsfall sind keine Bilder hinterlegt.</p>\n        </div>\n      {% endif %}\n\n    {% else %}\n      <div class=\"uc-empty-state\">\n        <p>Es wurde kein gültiger Anwendungsfall ausgewählt.</p>\n      </div>\n    {% endif %}\n  </div>\n</section>\n\n<style>\n  /* --- Layout & Spacing --- */\n  .use-case-gallery-section {\n    padding: 4rem 0;\n    /* Hintergrundfarbe entfernt */\n  }\n\n  /* --- Das Grid System (Die 3x Matrix) --- */\n  .uc-grid {\n    display: grid;\n    /* Desktop: Exakt 3 Spalten */\n    grid-template-columns: repeat(3, 1fr); \n    gap: 2rem; /* Abstand zwischen den Karten */\n    align-items: start;\n  }\n\n  /* --- Die Karte (Container für Bild + Text) --- */\n  .uc-card {\n    background: #ffffff;\n    border-radius: 16px; /* Runde Ecken */\n    overflow: hidden; /* Wichtig, damit das Bild die runden Ecken nicht überlappt */\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sanfter Schatten */\n    transition: transform 0.3s ease, box-shadow 0.3s ease;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n  }\n\n  /* Hover-Effekt für die ganze Karte */\n  .uc-card:hover {\n    transform: translateY(-5px); /* Karte hebt sich leicht an */\n    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12); /* Schatten wird stärker */\n  }\n\n  /* --- Das Bild --- */\n  .uc-image-wrapper {\n    width: 100%;\n    /* Hier definierst du das Format! \n       1 / 1 = Quadratisch\n       4 / 3 = Standard Fotoformat\n       16 / 9 = Breitbild \n    */\n    aspect-ratio: 4 / 3; \n    overflow: hidden;\n    position: relative;\n    background-color: #eee; /* Platzhalterfarbe beim Laden */\n  }\n\n  .uc-image-wrapper img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover; /* Schneidet das Bild zu, damit es das Format füllt, ohne zu verzerren */\n    object-position: center;\n    transition: transform 0.6s ease; /* Sanfter Zoom-Effekt */\n    display: block;\n  }\n\n  /* Bild zoomt leicht beim Hovern */\n  .uc-card:hover .uc-image-wrapper img {\n    transform: scale(1.05);\n  }\n\n  /* --- Die Bildunterschrift --- */\n  .uc-caption {\n    padding: 1rem 1.25rem;\n    font-size: 0.95rem;\n    color: #333;\n    background: #fff;\n    border-top: 1px solid #f0f0f0;\n    line-height: 1.4;\n    text-align: center; /* Oder 'left' wenn gewünscht */\n  }\n\n  /* --- Empty State --- */\n  .uc-empty-state {\n    text-align: center;\n    padding: 3rem;\n    background: #fff;\n    border-radius: 8px;\n    border: 1px dashed #ccc;\n    color: #666;\n  }\n\n  /* --- Responsiveness (Mobile Anpassung) --- */\n  \n  /* Tablet: 2 Spalten */\n  @media (max-width: 990px) {\n    .uc-grid {\n      grid-template-columns: repeat(2, 1fr);\n      gap: 1.5rem;\n    }\n  }\n\n  /* Mobile: 1 Spalte */\n  @media (max-width: 750px) {\n    .uc-grid {\n      grid-template-columns: 1fr;\n      gap: 1.5rem;\n    }\n    .use-case-gallery-section {\n      padding: 2rem 0;\n    }\n  }\n</style>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_nyqn9i"
+  ]
+}
