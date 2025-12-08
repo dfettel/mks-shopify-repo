@@ -311,7 +311,7 @@
                   "type": "custom-liquid",
                   "name": "t:names.custom_liquid",
                   "settings": {
-                    "custom_liquid": "<div id=\"collapseFooterHotline\" class=\"footer-column-content \" aria-labelledby=\"collapseFooterHotlineTitle\">\n\t\t\t\t\t\t\t\t<div class=\"footer-column-content-inner\">\n\t\t\t\t\t\t\t\t\t<p class=\"footer-contact-hotline\">\n\t\t\t\t\t\t\t\t\t\t<a href=\"tel:+4971232095200920663\">+49 7123 95 09 663</a>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\n<div id=\"collapseFooterOpening\" class=\"footer-column-content js-footer-column-content footer-contact\" aria-labelledby=\"collapseFooterHotlineTitle\">\n\t\t\t\t\t\t\t\t<div class=\"footer-column-content-inner\">\n\t\t\t\t\t\t\t\t\t<p class=\"footer-contact-opening\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"p-opening-hours\">Mo-Fr, 13:00 - 14:00 Uhr</span>\n\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\n<div id=\"collapseFooterEmail\" class=\"footer-column-content js-footer-column-content footer-contact\" aria-labelledby=\"collapseFooterHotlineTitle\">\n\t\t\t\t\t\t\t\t<div class=\"footer-column-content-inner\">\n\t\t\t\t\t\t\t\t\t<p class=\"footer-contact-email\">\n\t\t\t\t\t\t\t\t\t\t<a href=\"mailto:info@besonderes4kids.de\">info@besonderes4kids.de</a>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>"
+                    "custom_liquid": "<div class=\"footer-contact-wrapper\">\n  \n  <!-- 1. Telefon -->\n  <a href=\"tel:+4971232095200920663\" class=\"fc-item\">\n    <div class=\"fc-icon\">\n      <!-- SVG Telefon -->\n      <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .57 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.57A2 2 0 0 1 22 16.92z\"></path>\n      </svg>\n    </div>\n    <div class=\"fc-text\">\n      <span class=\"fc-label\">Hotline</span>\n      <span class=\"fc-value\">+49 7123 95 09 663</span>\n    </div>\n  </a>\n\n  <!-- 2. Öffnungszeiten -->\n  <div class=\"fc-item\">\n    <div class=\"fc-icon\">\n      <!-- SVG Uhr -->\n      <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n        <polyline points=\"12 6 12 12 16 14\"></polyline>\n      </svg>\n    </div>\n    <div class=\"fc-text\">\n      <span class=\"fc-label\">Erreichbarkeit</span>\n      <span class=\"fc-value\">Mo-Fr, 13:00 - 14:00 Uhr</span>\n    </div>\n  </div>\n\n  <!-- 3. E-Mail -->\n  <a href=\"mailto:info@besonderes4kids.de\" class=\"fc-item\">\n    <div class=\"fc-icon\">\n      <!-- SVG Mail -->\n      <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path>\n        <polyline points=\"22,6 12,13 2,6\"></polyline>\n      </svg>\n    </div>\n    <div class=\"fc-text\">\n      <span class=\"fc-label\">E-Mail schreiben</span>\n      <span class=\"fc-value\">info@besonderes4kids.de</span>\n    </div>\n  </a>\n\n</div>\n\n<style>\n  /* --- Container --- */\n  .footer-contact-wrapper {\n    display: flex;\n    flex-direction: column;\n    gap: 1.5rem; /* Abstand zwischen den Einträgen */\n    margin-top: 1rem;\n  }\n\n  /* --- Einzelnes Item --- */\n  .fc-item {\n    display: flex;\n    align-items: center; /* Vertikal zentrieren */\n    gap: 1rem; /* Abstand Icon zu Text */\n    text-decoration: none;\n    color: inherit; /* Farbe vom Footer erben */\n    transition: transform 0.2s ease, opacity 0.2s ease;\n  }\n\n  /* Hover Effekt für Links */\n  a.fc-item:hover {\n    transform: translateX(5px); /* Kleiner Ruck nach rechts */\n    opacity: 0.8;\n  }\n\n  /* --- Das Icon --- */\n  .fc-icon {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 40px;\n    height: 40px;\n    background-color: rgba(59, 165, 59, 0.1); /* Ganz helles Grün als Hintergrund */\n    border-radius: 50%; /* Kreisrund */\n    color: #3ba53b; /* Dein Marken-Grün */\n    flex-shrink: 0;\n  }\n\n  .fc-icon svg {\n    width: 20px;\n    height: 20px;\n  }\n\n  /* --- Der Textbereich --- */\n  .fc-text {\n    display: flex;\n    flex-direction: column;\n    line-height: 1.3;\n  }\n\n  /* Label (z.B. \"Hotline\") - Optional, kann man auch weglassen */\n  .fc-label {\n    font-size: 0.75rem;\n    text-transform: uppercase;\n    letter-spacing: 0.05em;\n    opacity: 0.7;\n    margin-bottom: 2px;\n  }\n\n  /* Der eigentliche Wert */\n  .fc-value {\n    font-size: 0.95rem;\n    font-weight: 500;\n  }\n</style>"
                   },
                   "blocks": {}
                 }
@@ -341,13 +341,78 @@
         "padding-block-end": 36
       }
     },
+    "section_dJmDYR": {
+      "type": "section",
+      "blocks": {
+        "text_fkkqDn": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Alle Preise inkl. gesetzl. Mehrwertsteuer zzgl.<a href=\"/pages/versandkosten\" target=\"_blank\" title=\"Versandkosten\">Versandkosten</a></p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_fkkqDn"
+      ],
+      "custom_css": [
+        "* {color: white !important;}"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": true,
+        "overlay_color": "#48ac4c",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "footer_utilities_jLGE8U": {
       "type": "footer-utilities",
       "blocks": {
         "footer_copyright_jweRK8": {
           "type": "footer-copyright",
           "settings": {
-            "show_powered_by": true,
+            "show_powered_by": false,
             "font_size": "0.75rem",
             "case": "none"
           },
@@ -379,6 +444,7 @@
   },
   "order": [
     "footer_EyfUR3",
+    "section_dJmDYR",
     "footer_utilities_jLGE8U"
   ]
 }
